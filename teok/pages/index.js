@@ -3,18 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components';
 
-export const Bubble = styled.div`
-position: absolute;
-top:130px;
-left:136px;
-`;
-
-// const Bubble = styled.text`
-//   font-family: 'Indie Flower', cursive;
-//   position: absolute;
-//   top:130px;
-//   left:136px;
-// `;
 
 
 export default function Home() {

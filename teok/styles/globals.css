@@ -5,6 +5,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  width: 390px;
+  height: 844px;
+  overflow: hidden;
+}
+
+body {
+  background-color: #F9EAEA;
 }
 
 a {

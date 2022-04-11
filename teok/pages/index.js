@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          It's Teok Final Project
+          Teok To Me
         </h1>
 
 

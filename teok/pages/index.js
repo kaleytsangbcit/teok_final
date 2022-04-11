@@ -1,6 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import styled from 'styled-components';
+
+export const Bubble = styled.div`
+position: absolute;
+top:130px;
+left:136px;
+`;
+
+// const Bubble = styled.text`
+//   font-family: 'Indie Flower', cursive;
+//   position: absolute;
+//   top:130px;
+//   left:136px;
+// `;
+
 
 export default function Home() {
   return (
@@ -12,17 +27,21 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Teok To Me
-        </h1>
+        <img id={styles.bubble} src="/bubble.png" alt="Dialogue bubble" />   
+        <text id={styles.bubbletext}>
+          Hello! I am Teok!</text>       
+        <img id="logowithtext" src="/logowithtext.png" alt="Teok Logo" />
+        <p>By Angelyne, Joyce and Kaley</p>
+        {/* <h1 className={styles.title}> */}
+        {/* </h1> */}
 
 
 
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
 
-      </footer>
+      </footer> */}
     </div>
   )
 }

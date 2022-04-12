@@ -7,16 +7,17 @@
   height: 844px;
   /* min-height: 100%;  */
   /* padding: 4rem 0; */
+  background-color: #F9EAEA;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden;
 }
 
 .main p {
-  size:14px
+  size:14px;
+  margin-top: 80px;
 }
 
 #bubble {

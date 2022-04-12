@@ -18,7 +18,7 @@ export default function Home() {
         <text id={styles.bubbletext}>
           Hi! I am Teok!
         </text>       
-        <img id="logowithtext" src="/logowithtext.png" alt="Teok Logo" />
+        <img id={styles.logowithtext} src="/logowithtext.png" alt="Teok Logo" />
 
         <p>By Angelyne, Joyce and Kaley</p>
         {/* <h1 className={styles.title}> */}

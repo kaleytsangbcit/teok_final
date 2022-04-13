@@ -1,0 +1,19 @@
+.logo {
+  position:absolute;
+  top:250px;
+  left:86px;
+}
+
+.bubbleText {
+  position:absolute;
+  top:14px;
+  left:50px;
+  font-family: 'Indie Flower', cursive;
+  font-size:30px;
+}
+
+.durationBtn {
+  position:relative;
+  margin:auto;
+  top:400px;
+}

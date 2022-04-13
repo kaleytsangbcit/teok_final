@@ -20,29 +20,31 @@
   margin-top: 214px;
 }
 
-
 #logowithtext {
-  position:relative;
-  top:88px;
-  left:0px;
+  position:absolute;
+  top:350px;
+  left:80px;
 }
 
 #bubble {
   position:relative;
   width:250px;
-  top:30px;
+  top:10px;
   left:10px;
 }
 
-#bubbletext {
+#bubbleText {
   font-family: 'Indie Flower', cursive;
   font-size:30px;
   position:relative;
-  top:-74px;
+  top:-90px;
   left:10px;
 }
 
-
+.Durationbtn {
+  position:relative;
+  top:200px;
+}
 
 
 

@@ -9,6 +9,7 @@ body {
   height: 844px;
   overflow: hidden;
   background-color: #FFFFFF;
+  position:relative;
 }
 
 body {

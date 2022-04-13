@@ -4,8 +4,6 @@ const BlueButton = styled.button`
     background:#69A5CA;
     text-align:center;
     font-size:24px;
-    // display: flex;
-    // justify-content: center;
     padding-right:5px;
     width:160px;
     height:60px;
@@ -14,15 +12,26 @@ const BlueButton = styled.button`
     border-color:white;
     font-family: 'Montserrat', sans-serif;
     align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:30px;
+
 `
-export function RelaxButton(){
+export function TwoMinButton(){
     return <BlueButton>
-        Relaxation
+        2-min
     </BlueButton>
 }    
 
-export function JournalButton(){
+export function FiveMinButton(){
     return <BlueButton>
-        Journal
+        5-min
+    </BlueButton>
+}    
+
+export function TenMinButton(){
+    return <BlueButton>
+        10-min
     </BlueButton>
 }    

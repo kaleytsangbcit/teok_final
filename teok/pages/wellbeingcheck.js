@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import styles from '../styles/WellBeingCheck.module.css'
 import { StartButton } from '../comps/buttons';
+import { NavBar } from '../comps/navbar';
 
 
 
@@ -26,6 +27,10 @@ export function ShowBubble() {
 
 export default function Main(){
   return <div>
+    <div className={styles.nav}>
+    <NavBar></NavBar>
+    </div>
+    
   <ShowBubble />
   <div className={styles.logo}>
     <img src="/logo.png" alt="Teok logo" />   

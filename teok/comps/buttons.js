@@ -62,3 +62,21 @@ export function StartButton(){
         Start
     </GreenButton>
 }    
+
+export function NextButton(){
+    return <BlueButton>
+        Next
+    </BlueButton>
+}
+
+export function NatureButton(){
+    return <BlueButton>
+        Nature
+    </BlueButton>
+}
+
+export function MusicButton(){
+    return <BlueButton>
+        Music
+    </BlueButton>
+}

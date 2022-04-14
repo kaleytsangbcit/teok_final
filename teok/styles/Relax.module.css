@@ -45,3 +45,9 @@
   margin:auto;
   top:450px;
 }
+
+.nav {
+  position: absolute;
+  top:15px;
+  left: 310px;
+}

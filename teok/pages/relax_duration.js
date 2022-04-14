@@ -5,26 +5,23 @@ import { TwoMinButton, FiveMinButton, TenMinButton } from '../comps/buttons';
 
 
 
-const Bubble = styled.div`
-position: relative;
-top:130px;
-left:136px;
-`
 
-export function ShowBubble() {
-  return <Bubble>
-    <img src="/bubble.png" alt="Dialogue bubble" />   
-    <text className={styles.bubbleText}>
-      Hi Carol!
-    </text>  
-  </Bubble>
-}
 
 export default function Main(){
   return <div>
-  <ShowBubble />
-  <div className={styles.logo}>
-    <img src="/logo.png" alt="Teok logo" />   
+  <div className={styles.progressbar}>
+   <img src="/progress_bar_2.png" alt="Teok logo" />  
+  </div>
+  <text className={styles.bubbleText}>
+      Carol
+  </text>
+  <text className={styles.text}>
+      How long would you like to relax for?
+  </text>
+
+  <h1 className={styles.h1}>Pick the Duration</h1>
+  <div className={styles.line}>
+    <img src="/line.png" alt="line" />   
   </div>  
   <div className={styles.durationBtn}>
     <TwoMinButton></TwoMinButton>

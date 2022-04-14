@@ -24,3 +24,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 30px;
+  color:#575757;
+  text-align: center;
+}

@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import styles from '../styles/WellBeingCheck.module.css'
-import { StartButton } from '../comps/buttons';
-import { NavBar } from '../comps/navbar';
+import styles from '../../styles/General.module.css'
+import { StartButton } from '../../comps/buttons';
+import { NavBar } from '../../comps/navbar';
 
 
 
 const Bubble = styled.div`
 position: relative;
-top:240px;
-left:80px;
+top:250px;
+left:60px;
 width:300px;
 `
 
 export function ShowBubble() {
   return<div>
-  <h1 className={styles.h1}>Well Being Check</h1>
+  <h1 className={styles.h1}>Getting Tips to Pick Your Choice</h1>
   <Bubble>
     <img src="/bubble.png" alt="Dialogue bubble" />   
     <text className={styles.bubbleText}>

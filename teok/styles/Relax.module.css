@@ -1,6 +1,6 @@
 /* relax_duration */
 
-.progressbar {
+.progressbar2 {
   position:absolute;
   top:100px;
   left:40px;
@@ -58,6 +58,13 @@
 
 /* Relaxation  */
 
+
+.progressbar3 {
+  position:absolute;
+  top:100px;
+  left:40px;
+}
+
 .h2 {
   font-size: 40px;
   position:absolute;
@@ -68,15 +75,39 @@
 .startwithicon {
   position:relative;
   margin:auto;
-  top:600px;
+  top:650px;
 }
 
 .logowithbreathing {
   position:absolute;
-  top:450px;
+  top:460px;
   left:120px;
 }
 
 .logowithbreathing img{
   width:70%;
 }
+
+.breathingcircle {
+  color: transparent;
+  position: absolute;
+  top: 520px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(204, 236, 240, 0.889);
+  animation: breathe 7s linear infinite;
+}
+@keyframes breathe {
+  0% {
+ box-shadow: 0 0 0 15px rgba(188, 237, 243, 0.3), 0 0 0 30px rgba(188, 237, 243, 0.3), 0 0 0 45px rgba(188, 237, 243, 0.3), 0 0 0 60px rgba(188, 237, 243, 0.3), 0 0 0 75px rgba(188, 237, 243, 0.3);
+  }
+  50% {
+ box-shadow: 0 0 0 25px rgba(188, 237, 243, 0.3), 0 0 0 50px rgba(188, 237, 243, 0.3), 0 0 0 75px rgba(188, 237, 243, 0.3), 0 0 0 100px rgba(188, 237, 243, 0.3), 0 0 0 125px rgba(188, 237, 243, 0.3);
+  }
+  100% {
+ box-shadow: 0 0 0 15px rgba(188, 237, 243, 0.3), 0 0 0 30px rgba(188, 237, 243, 0.3), 0 0 0 45px rgba(188, 237, 243, 0.3), 0 0 0 60px rgba(188, 237, 243, 0.3), 0 0 0 75px rgba(188, 237, 243, 0.3);
+  }
+ }

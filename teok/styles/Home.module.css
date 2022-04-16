@@ -16,20 +16,21 @@
 }
 
 .main p {
+  position: absolute;
   size:14px;
-  margin-top: 214px;
+  top: 600px;
 }
 
 #logowithtext {
   position:absolute;
-  top:350px;
+  top:330px;
   left:80px;
 }
 
 #bubble {
   position:relative;
   width:250px;
-  top:-20px;
+  top:-140px;
   left:10px;
 }
 
@@ -37,7 +38,7 @@
   font-family: 'Indie Flower', cursive;
   font-size:30px;
   position:relative;
-  top:-90px;
+  top:-210px;
   left:10px;
 }
 

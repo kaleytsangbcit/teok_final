@@ -19,8 +19,9 @@ export default function Main(){
     <img src="/line.png" alt="line" />   
   </div>  
     <text className={styles.text}>
-      
+        Let's start relaxing
     </text>
+    <h1 className={styles.h1}>Pick your background sounds</h1>
     
     <div className={styles.StartBtn}>
       <NatureButton></NatureButton>

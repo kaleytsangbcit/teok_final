@@ -13,8 +13,8 @@ export default function Main(){
     <div className={styles.nav}>
       <NavBar></NavBar>
       </div>
-  <div className={styles.progressbar}>
-   <img src="/progress_bar_2.png" alt="Progress Bar Stage 2" />  
+  <div className={styles.progressbar3}>
+   <img src="/progress_bar_3.png" alt="Progress Bar Stage 3" />  
   </div>
   <text className={styles.bubbleText}>
       Carol

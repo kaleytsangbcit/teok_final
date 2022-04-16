@@ -38,6 +38,24 @@ const GreenButton = styled.button`
     margin-top:30px;
 
 `
+const SmallButton = styled.button`
+    background:#9ED292;
+    text-align:center;
+    font-size:14px;
+    padding-right:5px;
+    width:120px;
+    height:36px;
+    border-radius:50px;
+    color:#292929;
+    border-color:white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:30px;
+`
+
 
 export function TwoMinButton(){
     const r = useRouter();
@@ -93,4 +111,10 @@ export function MusicButton(){
     return <BlueButton>
         Music
     </BlueButton>
+}
+
+export function GetTip(){
+    return <SmallButton>
+        Get Tips
+    </SmallButton>
 }

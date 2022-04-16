@@ -1,0 +1,20 @@
+
+.nav {
+    position: absolute;
+    top:15px;
+    left: 310px;
+  }
+
+.MusicTitle {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    margin: auto;
+}
+
+.sound {
+    position: absolute;
+    margin: auto;
+    top: 20px;
+
+}

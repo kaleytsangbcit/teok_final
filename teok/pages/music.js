@@ -41,40 +41,39 @@ export default function Main(){
         <NavBar></NavBar>
         </div>
         <Nature>
-            <text className={styles.MusicTitle}>Natural</text>
+            <text className={styles.MusicTitle}>Music</text>
         </Nature>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
+            <text className={styles.MusicTitle}>Music</text>
             <img src="/sound_icon.png" alt="sound"/>
         </NatureButton>
     </div>
   }
-  

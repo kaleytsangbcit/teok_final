@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const BlueButton = styled.button`
     background:#69A5CA;
@@ -39,19 +40,25 @@ const GreenButton = styled.button`
 `
 
 export function TwoMinButton(){
-    return <BlueButton>
+    const r = useRouter();
+    return <BlueButton onClick={
+        ()=>r.push('/relaxation')}>
         2-min
     </BlueButton>
 }    
 
 export function FiveMinButton(){
-    return <BlueButton>
+    const r = useRouter();
+    return <BlueButton onClick={
+        ()=>r.push('/relaxation')}>
         5-min
     </BlueButton>
 }    
 
 export function TenMinButton(){
-    return <BlueButton>
+    const r = useRouter();
+    return <BlueButton onClick={
+        ()=>r.push('/relaxation')}>
         10-min
     </BlueButton>
 }

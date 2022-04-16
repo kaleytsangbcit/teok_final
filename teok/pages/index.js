@@ -21,9 +21,6 @@ export default function Home() {
         <img id={styles.logowithtext} src="/logowithtext.png" alt="Teok Logo" />
 
         <p>By Angelyne, Joyce and Kaley</p>
-        {/* <h1 className={styles.title}> */}
-        {/* </h1> */}
-
 
 
       </main>

@@ -10,7 +10,7 @@ export default function Main(){
       </div>
 
       <div className={styles.progressbar}>
-    <img src="/progress_bar_1.png" alt="Teok logo" />  
+    <img src="/progress_bar_1.png" alt="Progress Bar Stage 1" />  
     </div>
     <text className={styles.bubbleText}>
       Carol

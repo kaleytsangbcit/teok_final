@@ -41,7 +41,3 @@ export default function Main(){
 
   </div>
 }
-
-// export default function Journal(){
-//   return <JournalButton></JournalButton>
-// }

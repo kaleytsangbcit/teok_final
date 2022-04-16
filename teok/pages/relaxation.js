@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import styles from '../styles/Relax.module.css'
-import { TwoMinButton, FiveMinButton, TenMinButton } from '../comps/buttons';
+import { StartButtonWithIcon } from '../comps/buttons';
 import { NavBar } from '../comps/navbar';
 
 
@@ -20,17 +20,19 @@ export default function Main(){
       Carol
   </text>
   <text className={styles.text}>
-      How long would you like to relax for?
+      Let's practice breathing by following Teok?
   </text>
 
-  <h1 className={styles.h1}>Pick the Duration</h1>
+  <h1 className={styles.h2}>2 : 00</h1>
   <div className={styles.line}>
     <img src="/line.png" alt="line" />   
   </div>  
-  <div className={styles.durationBtn}>
-    <TwoMinButton></TwoMinButton>
-    <FiveMinButton></FiveMinButton>
-    <TenMinButton></TenMinButton>
+  <div className={styles.logowithbreathing}>
+    <img src="/logo.png" alt="logo" /> 
+  </div>
+  <div className={styles.startwithicon}>
+    <StartButtonWithIcon></StartButtonWithIcon>
+
   </div>
 
   </div>

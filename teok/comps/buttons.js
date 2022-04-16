@@ -63,6 +63,13 @@ export function StartButton(){
     </GreenButton>
 }    
 
+export function StartButtonWithIcon(){
+    return <GreenButton>
+        Start
+        <img src="/play.png" alt="play icon" />  
+    </GreenButton>
+}
+
 export function NextButton(){
     return <BlueButton>
         Next

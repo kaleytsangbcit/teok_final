@@ -1,12 +1,14 @@
+/* relax_duration */
+
 .progressbar {
   position:absolute;
-  top:80px;
+  top:100px;
   left:40px;
 }
 
 .bubbleText {
   position:absolute;
-  top:170px;
+  top:180px;
   left:30px;
   font-family: 'Indie Flower', cursive;
   font-size:30px;
@@ -15,7 +17,7 @@
 
 .text {
   position:absolute;
-  top:230px;
+  top:240px;
   left:10px;
   font-size: 24px;
   text-align: center;
@@ -30,24 +32,51 @@
 .line {
   margin:auto;
   position:absolute;
-  top:300px;
+  top: 320px;
   left:40px;
 }
 
 .h1 {
   position:absolute;
-  top:350px;
+  top:370px;
   left:60px;
 }
+
+
 
 .durationBtn {
   position:relative;
   margin:auto;
-  top:450px;
+  top:460px;
 }
 
 .nav {
   position: absolute;
   top:15px;
   left: 310px;
+}
+
+/* Relaxation  */
+
+.h2 {
+  font-size: 40px;
+  position:absolute;
+  top:330px;
+  left:150px;
+}
+
+.startwithicon {
+  position:relative;
+  margin:auto;
+  top:600px;
+}
+
+.logowithbreathing {
+  position:absolute;
+  top:450px;
+  left:120px;
+}
+
+.logowithbreathing img{
+  width:70%;
 }

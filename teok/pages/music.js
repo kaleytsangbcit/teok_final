@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import styles from '../styles/WellBeingCheck.module.css'
+import styles from '../styles/nature.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
 import { MusicBar } from "../comps/buttons";
@@ -41,11 +41,11 @@ export default function Main(){
         <NavBar></NavBar>
         </div>
         <Nature>
-            <text className={styles.MusicTitle}>Music</text>
+            <text >Music</text>
         </Nature>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
-            <img src="/sound_icon.png" alt="sound"/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
@@ -53,27 +53,27 @@ export default function Main(){
         </NatureButton>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
-            <img src="/sound_icon.png" alt="sound"/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
-            <img src="/sound_icon.png" alt="sound"/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
-            <img src="/sound_icon.png" alt="sound"/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
-            <img src="/sound_icon.png" alt="sound"/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
-            <img src="/sound_icon.png" alt="sound"/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton >
             <text className={styles.MusicTitle}>Music</text>
-            <img src="/sound_icon.png" alt="sound"/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
     </div>
   }

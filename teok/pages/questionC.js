@@ -12,7 +12,7 @@ width:300px;
 `
 
 
-const ColourButton = styled.button`
+const colourButton = styled.button`
     // background:#ADCBDE;
     // width:322px;
     // height:60px;
@@ -63,22 +63,22 @@ export default function Main(){
         </Bubble>
          
         <div className={styles.itemList2}>
-            <ColourButton >
+            <colourButton >
+                {/* <text className={styles.colName}>colour</text> */}
+                <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+            </colourButton>
+            <colourButton >
                 {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
-            </ColourButton>
-            <ColourButton >
+            </colourButton>
+            <colourButton >
                 {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
-            </ColourButton>
-            <ColourButton >
+            </colourButton>
+            <colourButton >
                 {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
-            </ColourButton>
-            <ColourButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
-                <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
-            </ColourButton>
+            </colourButton>
         </div>
         
         <div className={styles.prevNext}>

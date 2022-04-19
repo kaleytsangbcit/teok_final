@@ -90,3 +90,8 @@
     flex-wrap: wrap;
 }
 
+.colName{
+    position: absolute;
+    left: 60px;
+    margin: auto;
+}

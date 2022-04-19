@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
+import { Router, useRouter } from 'next/router';
 
 const BlueButton = styled.button`
     background:#69A5CA;
@@ -56,6 +56,8 @@ const SmallButton = styled.button`
     margin-top:30px;
 `
 
+const Arrow = styled.div`
+`
 
 export function TwoMinButton(){
     const r = useRouter();
@@ -135,4 +137,12 @@ export function GetTip(){
         ()=>r.push("/tips")}>
         Get Tips
     </SmallButton>
+}
+
+export function LeftArrow(){
+    const r = useRouter();
+    return <Arrow onClick={
+        ()=> r.back()}>
+        <img src="/leftarrow.png" alt="back icon" /> 
+    </Arrow>
 }

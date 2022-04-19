@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import styles from '../styles/Relax.module.css'
-import { TwoMinButton, FiveMinButton, TenMinButton } from '../comps/buttons';
+import { TwoMinButton, FiveMinButton, TenMinButton, LeftArrow } from '../comps/buttons';
 import { NavBar } from '../comps/navbar';
 import { GetName } from './data/name_content';
 
@@ -12,6 +12,9 @@ export default function Main(){
 
 
   return <div>
+    <div className={styles.leftarrow}>
+      <LeftArrow></LeftArrow>
+    </div> 
     <div className={styles.nav}>
       <NavBar></NavBar>
       </div>

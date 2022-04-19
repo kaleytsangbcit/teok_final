@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import styles from '../../styles/Relax.module.css'
-import { StartButtonWithIcon } from '../../comps/buttons';
+import { StartButtonWithIcon, LeftArrow  } from '../../comps/buttons';
 import { NavBar } from '../../comps/navbar';
 // import { useCountdown } from '../../comps/timer';
 import { Timer } from '../../comps/timer';
@@ -10,6 +10,7 @@ import { GetName } from '../../pages/data/name_content';
 
 
 export default function Main(){
+
   const nm = GetName();
   // const endTime = new Date().getTime() + 60000 * 2; // 2 minutes
   // const [timeLeft, setEndTime] = useCountdown(endTime);
@@ -18,6 +19,9 @@ export default function Main(){
   // const seconds = Math.floor(timeLeft / 1000) % 60;
 
   return <div>
+    <div className={styles.leftarrow}>
+      <LeftArrow></LeftArrow>
+    </div> 
     <div className={styles.nav}>
       <NavBar></NavBar>
       </div>

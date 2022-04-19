@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { NatureButton, MusicButton, GetTip} from '../comps/buttons';
 import { NavBar } from '../comps/navbar';
 import styled from 'styled-components';
+import { GetName } from './data/name_content';
 
 const Bubble = styled.div`
     margin: auto;
@@ -12,6 +13,7 @@ const Bubble = styled.div`
 `
 
 export default function Main(){
+    const nm = GetName();
     return <div>
       <div className={styles.nav}>
       <NavBar></NavBar>
@@ -21,7 +23,7 @@ export default function Main(){
     <img src="/progress_bar_1.png" alt="Progress Bar Stage 1" />  
     </div>
     <text className={styles.bubbleText}>
-      Carol
+      Hi {nm}
     </text>
     <div className={styles.line}>
     <img src="/line.png" alt="line" />   

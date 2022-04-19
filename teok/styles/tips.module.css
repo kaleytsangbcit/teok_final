@@ -1,0 +1,87 @@
+
+.nav {
+    position: absolute;
+    top:15px;
+    left: 310px;
+  }
+
+.MusicTitle {
+    position: absolute;
+    left: 60px;
+    margin: auto;
+}
+
+.sound {
+    position: absolute;
+    margin: auto;
+    top: 35px;
+    right: 12px;
+
+}
+
+.bubbleText {
+    position:absolute;
+    top:18px;
+    left:46px;
+    font-family: 'Indie Flower', cursive;
+    font-size:24px;
+  }
+
+.itemList{
+    position: relative;
+    /* display: flex;
+    justify-content: center; */
+    top: 100px;
+}
+/* 
+.logo2{
+    position: absolute;
+    width: 20%;
+} */
+
+.prevNext{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    
+
+    padding-top: 60%;
+}
+
+
+.logo {
+    position:absolute;
+    top:400px;
+    left:86px;
+  }
+
+.optBtn{
+
+    position: relative;
+    padding: 10px;
+
+
+}
+
+.itemList1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+}
+
+.colBtn{
+    position: relative;
+    padding: 10px;
+    width: 70%;
+}
+
+.itemList2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+

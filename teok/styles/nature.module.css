@@ -1,3 +1,8 @@
+.leftarrow {
+    position: absolute;
+    top:26px;
+    left:22px;
+  }
 
 .nav {
     position: absolute;

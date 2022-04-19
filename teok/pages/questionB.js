@@ -12,7 +12,7 @@ width:300px;
 `
 
 
-const OptionButton = styled.button`
+const optionButton = styled.button`
     // background:#ADCBDE;
     // width:322px;
     // height:60px;
@@ -62,14 +62,14 @@ export default function Main(){
         </Bubble>
          
         <div className={styles.itemList1}>
-            <OptionButton >
+            <optionButton >
                 {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/cold.png" alt="cold"/>
-            </OptionButton>
-            <OptionButton >
+            </optionButton>
+            <optionButton >
                 {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/warm.png" alt="warm"/>
-            </OptionButton>
+            </optionButton>
         </div>
         
         <div className={styles.prevNext}>

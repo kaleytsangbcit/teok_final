@@ -12,7 +12,7 @@ width:300px;
 `
 
 
-const OptionButton = styled.button`
+const optionButton = styled.button`
     // background:#ADCBDE;
     // width:322px;
     // height:60px;
@@ -65,10 +65,10 @@ export default function Main(){
         </Bubble>
          
         <div className={styles.itemList1}>
-            <OptionButton >
+            <optionButton >
                 {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/indoor.png" alt="indoor"/>
-            </OptionButton>
+            </optionButton>
             <optionButton >
                 {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/outdoor.png" alt="outdoor"/>

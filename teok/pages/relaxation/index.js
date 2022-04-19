@@ -23,7 +23,7 @@ export default function Main(){
       Let's practice breathing by following Teok?
   </text>
 
-  <h1 className={styles.h2}>2 : 00</h1>
+  <h2 className={styles.h2}>2 : 00</h2>
   <div className={styles.line}>
     <img src="/line.png" alt="line" />   
   </div> 

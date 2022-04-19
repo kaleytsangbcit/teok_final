@@ -88,12 +88,22 @@ export function StartButton(){
     </GreenButton>
 }    
 
+
+
 export function StartButtonWithIcon(){
-    return <GreenButton>
+
+    const animation = (event) => {
+        event.target.classList.add('breathingcircle');
+        innertext = "Pause";
+    }
+
+    return <GreenButton onClick={animation}>
         Start
         <img src="/play.png" alt="play icon" />  
     </GreenButton>
 }
+
+
 
 export function NextButton(){
     return <BlueButton>

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from '../styles/tips.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
-import { prevButton, next1Button, next2Button } from "../comps/buttons";
+import { prevButton, next1Button, next2Button, LeftArrow } from "../comps/buttons";
 
 const Bubble = styled.div`
 position: relative;
@@ -49,6 +49,9 @@ const SmallButton2 = styled.button`
 
 export default function Main(){
     return <div>
+        <div className={styles.leftarrow}>
+            <LeftArrow></LeftArrow>
+        </div> 
         <div className={styles.nav}>
         <NavBar></NavBar>
         </div>

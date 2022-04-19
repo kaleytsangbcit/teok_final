@@ -85,7 +85,9 @@ export function TenMinButton(){
 
 
 export function StartButton(){
-    return <GreenButton>
+    const r = useRouter();
+    return <GreenButton onClick={
+        ()=>r.push("/questionA")}>
         Start
     </GreenButton>
 }    

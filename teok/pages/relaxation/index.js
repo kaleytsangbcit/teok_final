@@ -5,11 +5,12 @@ import { StartButtonWithIcon } from '../../comps/buttons';
 import { NavBar } from '../../comps/navbar';
 // import { useCountdown } from '../../comps/timer';
 import { Timer } from '../../comps/timer';
-
+import { GetName } from '../../pages/data/name_content';
 
 
 
 export default function Main(){
+  const nm = GetName();
   // const endTime = new Date().getTime() + 60000 * 2; // 2 minutes
   // const [timeLeft, setEndTime] = useCountdown(endTime);
 
@@ -24,7 +25,7 @@ export default function Main(){
    <img src="/progress_bar_3.png" alt="Progress Bar Stage 3" />  
   </div>
   <text className={styles.bubbleText}>
-      Carol
+    {nm}
   </text>
   <text className={styles.text}>
       Let's practice breathing by following Teok?

@@ -106,19 +106,25 @@ export function StartButtonWithIcon(){
 
 
 export function NextButton(){
-    return <BlueButton>
+    const r = useRouter();
+    return <BlueButton onClick={
+        ()=>r.push("/start_relax")}>
         Next
     </BlueButton>
 }
 
 export function NatureButton(){
-    return <BlueButton>
+    const r = useRouter();
+    return <BlueButton onClick={
+        ()=>r.push("/nature")}>
         Nature
     </BlueButton>
 }
 
 export function MusicButton(){
-    return <BlueButton>
+    const r = useRouter();
+    return <BlueButton onClick={
+        ()=>r.push("/music")}>
         Music
     </BlueButton>
 }

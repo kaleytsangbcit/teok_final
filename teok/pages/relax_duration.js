@@ -3,11 +3,12 @@ import { useRouter } from 'next/router';
 import styles from '../styles/Relax.module.css'
 import { TwoMinButton, FiveMinButton, TenMinButton } from '../comps/buttons';
 import { NavBar } from '../comps/navbar';
+import { GetName } from './data/name_content';
 
 
 
 export default function Main(){
-
+  const nm = GetName();
 
 
   return <div>
@@ -18,7 +19,7 @@ export default function Main(){
     <img src="/progress_bar_2.png" alt="Progress Bar Stage 2" />  
     </div>
     <text className={styles.bubbleText}>
-        Carol
+      {nm}
     </text>
     <text className={styles.text}>
         How long would you like to relax for?

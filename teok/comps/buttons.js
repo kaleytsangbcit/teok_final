@@ -130,7 +130,9 @@ export function MusicButton(){
 }
 
 export function GetTip(){
-    return <SmallButton>
+    const r = useRouter();
+    return <SmallButton onClick={
+        ()=>r.push("/tips")}>
         Get Tips
     </SmallButton>
 }

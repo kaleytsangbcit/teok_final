@@ -3,12 +3,19 @@ import { useRouter } from 'next/router';
 import styles from '../../styles/Relax.module.css'
 import { StartButtonWithIcon } from '../../comps/buttons';
 import { NavBar } from '../../comps/navbar';
-
+// import { useCountdown } from '../../comps/timer';
+import { Timer } from '../../comps/timer';
 
 
 
 
 export default function Main(){
+  // const endTime = new Date().getTime() + 60000 * 2; // 2 minutes
+  // const [timeLeft, setEndTime] = useCountdown(endTime);
+
+  // const minutes = Math.floor(timeLeft / 60000) % 60;
+  // const seconds = Math.floor(timeLeft / 1000) % 60;
+
   return <div>
     <div className={styles.nav}>
       <NavBar></NavBar>
@@ -23,7 +30,10 @@ export default function Main(){
       Let's practice breathing by following Teok?
   </text>
 
-  <h2 className={styles.h2}>2 : 00</h2>
+  <div className={styles.timer}>
+    {/* <p>{`${minutes}:${seconds}`}</p> */}
+    <Timer></Timer>
+  </div>
   <div className={styles.line}>
     <img src="/line.png" alt="line" />   
   </div> 
@@ -34,7 +44,6 @@ export default function Main(){
 
   <div className={styles.startwithicon}>
     <StartButtonWithIcon></StartButtonWithIcon>
-
   </div>
 
   </div>

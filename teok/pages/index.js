@@ -2,12 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components';
-// import { useEffect } from 'react';
-// import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 
 
 export default function Home() {
+  const r = useRouter();
+  
+  useEffect(() => {
+    setTimeout(() => {
+      r.push('/name');    
+    }, 2000)
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>

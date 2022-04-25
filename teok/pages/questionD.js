@@ -45,7 +45,7 @@ const SmallButton2 = styled.button`
     align-items: center;
     display:flex;
     justify-content: center;
-    margin:auto;
+    margin:25px;
     margin-top:30px;
 `
 

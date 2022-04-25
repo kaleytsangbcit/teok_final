@@ -46,11 +46,15 @@
 
 .prevNext{
     display: flex;
-    justify-content: flex-end;
-    position: relative;
+    /* justify-content: flex-end; */
+    padding-top: 200px;
+    position: absolute;
+    top: 520px;
+    left: 30px;
+    /* padding-right: 10px; */
     
 
-    padding-top: 60%;
+    /* padding-top: 60%; */
 }
 
 
@@ -72,13 +76,14 @@
     position: relative;
     display: flex;
     justify-content: center;
-    top: 150px;
+    top: 170px;
 }
 
 .colBtn{
     position: relative;
     padding: 10px;
     width: 70%;
+    padding-top: 30px;
 }
 
 .itemList2{
@@ -88,10 +93,13 @@
     top: 150px;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
+
 }
 
 .colName{
     position: absolute;
-    left: 60px;
-    margin: auto;
+    display: flex;
+    padding-left: 45px;
+    /* margin: auto; */
 }

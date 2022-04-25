@@ -32,7 +32,7 @@ export default function Main(){
     {nm}
   </text>
   <text className={styles.text}>
-      Let's practice breathing by following Teok?
+      Let's practice breathing by following Teok
   </text>
 
   <div className={styles.timer}>

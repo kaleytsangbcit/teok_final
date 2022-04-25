@@ -4,13 +4,20 @@ import styles from '../styles/Relax.module.css'
 import { TwoMinButton, FiveMinButton, TenMinButton, LeftArrow } from '../comps/buttons';
 import { NavBar } from '../comps/navbar';
 import { GetName } from './data/name_content';
+// import { useEffect } from 'react/cjs/react.production.min';
 
 
 
 export default function Main(){
   const nm = GetName();
+  const r = useRouter();
 
-
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     r.push('/name');
+  //   }, 1000);
+  // }, []);
+  
   return <div>
     <div className={styles.leftarrow}>
       <LeftArrow></LeftArrow>

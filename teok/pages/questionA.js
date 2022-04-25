@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from '../styles/tips.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
-import { LeftArrow } from '../comps/buttons';
+import { LeftArrow, SmallBtn, SmallBtn2 } from '../comps/buttons';
 
 const Bubble = styled.div`
 position: relative;
@@ -10,35 +10,11 @@ top:106px;
 left:60px;
 width:300px;
 `
-const SmallBtn = styled.button`
-    background:#69A5CA;
-    text-align:center;
-    font-size:14px;
-    padding-right:5px;
-    width:109px;
-    height:38px;
-    border-radius:50px;
-    color:#FFFFFF;
-    border-color:white;
-    font-family: 'Montserrat', sans-serif;
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    margin:auto;
-    margin-top:30px;
-    margin: 25px;
-`
 
 const optionButton = styled.button`
     align-items: center;
 `
 
-export function SmallButton2(){
-    const r = useRouter();
-    return <SmallBtn onClick={
-        ()=>r.push('/questionB')}>
-        </SmallBtn>
-}
 
 
 export default function Main(){
@@ -68,9 +44,9 @@ export default function Main(){
         </div>
         
         <div className={styles.prevNext}>
-            <SmallBtn>
+            <SmallBtn2>
               Previous
-            </SmallBtn>
+            </SmallBtn2>
             <SmallBtn>
               Next
             </SmallBtn>

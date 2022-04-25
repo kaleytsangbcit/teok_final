@@ -70,11 +70,29 @@ const SmallButton2 = styled.button`
     align-items: center;
     display:flex;
     justify-content: center;
-    margin:auto;
+    margin:25px;
     margin-top:30px;
 `
 
 const Arrow = styled.div`
+`
+
+const SmallButton3 = styled.button`
+    background:#69A5CA;
+    text-align:center;
+    font-size:14px;
+    padding-right:5px;
+    width:109px;
+    height:38px;
+    border-radius:50px;
+    color:#FFFFFF;
+    border-color:white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:25px;
+    margin-top:30px;
 `
 
 export function TwoMinButton(){
@@ -175,4 +193,42 @@ export function NextButton2(){
         ()=>r.push("/relax_duration")}>
             Next
     </SmallButton2>
+}
+
+export function SmallBtn(){
+    const r = useRouter();
+    return <SmallButton3 onClick={
+        ()=>r.push("/questionB")}>
+            Next
+    </SmallButton3>
+}
+export function SmallBtn2(){
+    const r = useRouter();
+    return <SmallButton3 onClick={
+        ()=>r.back()}>
+            Previous
+    </SmallButton3>
+}
+export function SmallBtn3(){
+    const r = useRouter();
+    return <SmallButton3 onClick={
+        ()=>r.push("/questionC")}>
+            Next
+    </SmallButton3>
+}
+
+export function SmallBtn4(){
+    const r = useRouter();
+    return <SmallButton3 onClick={
+        ()=>r.push("/questionD")}>
+            Next
+    </SmallButton3>
+}
+
+export function SmallBtn5(){
+    const r = useRouter();
+    return <SmallButton3 onClick={
+        ()=>r.push("/relax_duration")}>
+            Next
+    </SmallButton3>
 }

@@ -13,19 +13,6 @@ width:300px;
 
 
 const colourButton = styled.button`
-    // background:#ADCBDE;
-    // width:322px;
-    // height:60px;
-    // display:flex;
-    // align-items:center;
-    // justify-content:center;
-    // border-radius: 10px;
-    // border: none;
-    // position: relative;
-    // margin:auto;
-    // margin-top:20px;
-    // font-family: 'Montserrat', sans-serif;
-    align-items: center;
     margin:5px;
 `
 
@@ -64,20 +51,21 @@ export default function Main(){
          
         <div className={styles.itemList2}>
             <colourButton >
-                {/* <text className={styles.colName}>colour</text> */}
+
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
             <colourButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
             <colourButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
             <colourButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
         </div>
         

@@ -13,18 +13,6 @@ width:300px;
 
 
 const optionButton = styled.button`
-    // background:#ADCBDE;
-    // width:322px;
-    // height:60px;
-    // display:flex;
-    // align-items:center;
-    // justify-content:center;
-    // border-radius: 10px;
-    // border: none;
-    // position: relative;
-    // margin:auto;
-    // margin-top:20px;
-    // font-family: 'Montserrat', sans-serif;
     align-items: center;
 `
 
@@ -44,6 +32,7 @@ const SmallButton2 = styled.button`
     justify-content: center;
     margin:auto;
     margin-top:30px;
+    
 `
 
 
@@ -63,11 +52,9 @@ export default function Main(){
          
         <div className={styles.itemList1}>
             <optionButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/cold.png" alt="cold"/>
             </optionButton>
             <optionButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/warm.png" alt="warm"/>
             </optionButton>
         </div>

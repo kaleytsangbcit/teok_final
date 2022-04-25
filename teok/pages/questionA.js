@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from '../styles/tips.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
-import { prevButton, next1Button, next2Button, LeftArrow } from "../comps/buttons";
+import { LeftArrow } from '../comps/buttons';
 
 const Bubble = styled.div`
 position: relative;
@@ -10,25 +10,7 @@ top:106px;
 left:60px;
 width:300px;
 `
-
-
-const optionButton = styled.button`
-    // background:#ADCBDE;
-    // width:322px;
-    // height:60px;
-    // display:flex;
-    // align-items:center;
-    // justify-content:center;
-    // border-radius: 10px;
-    // border: none;
-    // position: relative;
-    // margin:auto;
-    // margin-top:20px;
-    // font-family: 'Montserrat', sans-serif;
-    align-items: center;
-`
-
-const SmallButton2 = styled.button`
+const SmallBtn = styled.button`
     background:#69A5CA;
     text-align:center;
     font-size:14px;
@@ -45,6 +27,17 @@ const SmallButton2 = styled.button`
     margin:auto;
     margin-top:30px;
 `
+
+const optionButton = styled.button`
+    align-items: center;
+`
+
+export function SmallButton2(){
+    const r = useRouter();
+    return <SmallBtn onClick={
+        ()=>r.push('/questionB')}>
+        </SmallBtn>
+}
 
 
 export default function Main(){
@@ -66,22 +59,20 @@ export default function Main(){
          
         <div className={styles.itemList1}>
             <optionButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/indoor.png" alt="indoor"/>
             </optionButton>
             <optionButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/outdoor.png" alt="outdoor"/>
             </optionButton>
         </div>
         
         <div className={styles.prevNext}>
-            <SmallButton2>
+            <SmallBtn>
               Previous
-            </SmallButton2>
-            <SmallButton2>
+            </SmallBtn>
+            <SmallBtn>
               Next
-            </SmallButton2>
+            </SmallBtn>
         </div>
     </div>
   }

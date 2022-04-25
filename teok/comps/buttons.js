@@ -148,3 +148,4 @@ export function LeftArrow(){
         <img src="/leftarrow.png" alt="back icon" /> 
     </Arrow>
 }
+

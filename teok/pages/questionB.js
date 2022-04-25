@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from '../styles/tips.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
-import { prevButton, next1Button, next2Button } from "../comps/buttons";
+import { prevButton, next1Button, next2Button, SmallBtn3, SmallBtn2 } from "../comps/buttons";
 
 const Bubble = styled.div`
 position: relative;
@@ -13,38 +13,9 @@ width:300px;
 
 
 const optionButton = styled.button`
-    // background:#ADCBDE;
-    // width:322px;
-    // height:60px;
-    // display:flex;
-    // align-items:center;
-    // justify-content:center;
-    // border-radius: 10px;
-    // border: none;
-    // position: relative;
-    // margin:auto;
-    // margin-top:20px;
-    // font-family: 'Montserrat', sans-serif;
     align-items: center;
 `
 
-const SmallButton2 = styled.button`
-    background:#69A5CA;
-    text-align:center;
-    font-size:14px;
-    padding-right:5px;
-    width:109px;
-    height:38px;
-    border-radius:50px;
-    color:#FFFFFF;
-    border-color:white;
-    font-family: 'Montserrat', sans-serif;
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    margin:auto;
-    margin-top:30px;
-`
 
 
 export default function Main(){
@@ -63,22 +34,20 @@ export default function Main(){
          
         <div className={styles.itemList1}>
             <optionButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/cold.png" alt="cold"/>
             </optionButton>
             <optionButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.optBtn} src="/warm.png" alt="warm"/>
             </optionButton>
         </div>
         
         <div className={styles.prevNext}>
-            <SmallButton2>
+            <SmallBtn2>
               Previous
-            </SmallButton2>
-            <SmallButton2>
+            </SmallBtn2>
+            <SmallBtn3>
               Next
-            </SmallButton2>
+            </SmallBtn3>
         </div>
     </div>
   }

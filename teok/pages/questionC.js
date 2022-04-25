@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from '../styles/tips.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
-import { prevButton, next1Button, next2Button } from "../comps/buttons";
+import { prevButton, next1Button, next2Button, SmallBtn2, SmallBtn4 } from "../comps/buttons";
 
 const Bubble = styled.div`
 position: relative;
@@ -13,39 +13,9 @@ width:300px;
 
 
 const colourButton = styled.button`
-    // background:#ADCBDE;
-    // width:322px;
-    // height:60px;
-    // display:flex;
-    // align-items:center;
-    // justify-content:center;
-    // border-radius: 10px;
-    // border: none;
-    // position: relative;
-    // margin:auto;
-    // margin-top:20px;
-    // font-family: 'Montserrat', sans-serif;
-    align-items: center;
     margin:5px;
 `
 
-const SmallButton2 = styled.button`
-    background:#69A5CA;
-    text-align:center;
-    font-size:14px;
-    padding-right:5px;
-    width:109px;
-    height:38px;
-    border-radius:50px;
-    color:#FFFFFF;
-    border-color:white;
-    font-family: 'Montserrat', sans-serif;
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    margin:auto;
-    margin-top:30px;
-`
 
 
 export default function Main(){
@@ -64,30 +34,31 @@ export default function Main(){
          
         <div className={styles.itemList2}>
             <colourButton >
-                {/* <text className={styles.colName}>colour</text> */}
+
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
             <colourButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
             <colourButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
             <colourButton >
-                {/* <text className={styles.MusicTitle}>Music</text> */}
                 <img className={styles.colBtn} src="/teokOk.png" alt="colour"/>
+                <text className={styles.colName}>colour</text>
             </colourButton>
         </div>
         
         <div className={styles.prevNext}>
-            <SmallButton2>
+            <SmallBtn2>
               Previous
-            </SmallButton2>
-            <SmallButton2>
+            </SmallBtn2>
+            <SmallBtn4>
               Next
-            </SmallButton2>
+            </SmallBtn4>
         </div>
     </div>
   }

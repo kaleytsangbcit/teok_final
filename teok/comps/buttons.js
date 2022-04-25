@@ -56,6 +56,24 @@ const SmallButton = styled.button`
     margin-top:30px;
 `
 
+const SmallButton2 = styled.button`
+    background:#69A5CA;
+    text-align:center;
+    font-size:14px;
+    padding-right:5px;
+    width:109px;
+    height:38px;
+    border-radius:50px;
+    color:#FFFFFF;
+    border-color:white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:30px;
+`
+
 const Arrow = styled.div`
 `
 
@@ -147,4 +165,12 @@ export function LeftArrow(){
         ()=> r.back()}>
         <img src="/leftarrow.png" alt="back icon" /> 
     </Arrow>
+}
+
+export function NextButton2(){
+    const r = useRouter();
+    return <SmallButton2 onClick={
+        ()=>r.push("/relax_duration")}>
+            Next
+    </SmallButton2>
 }

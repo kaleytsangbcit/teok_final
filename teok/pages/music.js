@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from '../styles/nature.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
-import { MusicBar, LeftArrow } from "../comps/buttons";
+import { MusicBar, LeftArrow, NextButton2 } from "../comps/buttons";
 
 const NatureButton = styled.button`
     background:#ADCBDE;
@@ -15,7 +15,7 @@ const NatureButton = styled.button`
     border: none;
     position: relative;
     margin:auto;
-    margin-top:20px;
+    margin-top:14px;
     font-family: 'Montserrat', sans-serif;
 `
 
@@ -33,7 +33,11 @@ const Nature = styled.button`
     margin-top:60px;
     margin-bottom:60px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 `
+
+
 
 export default function Main(){
     return <div>
@@ -78,5 +82,9 @@ export default function Main(){
             <text className={styles.MusicTitle}>Music</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
+
+        <div className={styles.prevNext}>
+            <NextButton2></NextButton2>
+        </div>
     </div>
   }

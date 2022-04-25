@@ -15,10 +15,6 @@ const Bubble = styled.div`
 export default function Main(){
     const nm = GetName();
     return <div>
-      <div className={styles.nav}>
-      <NavBar></NavBar>
-      </div>
-
       <div className={styles.progressbar}>
     <img src="/progress_bar_1.png" alt="Progress Bar Stage 1" />  
     </div>

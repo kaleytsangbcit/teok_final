@@ -11,6 +11,7 @@ left:80px;
 width:300px;
 `
 
+
 export function ShowBubble() {
     return<div>
     <Bubble>
@@ -21,6 +22,8 @@ export function ShowBubble() {
     </Bubble>
     </div>
   }
+
+  
 
 export default function Main(){
     return <div>

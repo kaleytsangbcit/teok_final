@@ -23,3 +23,8 @@
     right: 12px;
 
 }
+
+.prevNext {
+  position: absolute;
+  right: 40px;
+}

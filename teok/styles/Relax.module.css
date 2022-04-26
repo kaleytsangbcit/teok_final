@@ -73,9 +73,10 @@
 
 .timer {
   font-size: 40px;
-  position:absolute;
-  top:350px;
-  left:150px;
+  position: relative;
+  top: 338px;
+  text-align: center;
+  margin:auto;
 }
 
 .startwithicon {

@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;200;300;400&display=swap');
+
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  width: 390px;
+  height: 844px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position:relative;
+}
+
+body {
+  background-color: #F9EAEA;
 }
 
 a {
@@ -13,4 +23,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  color:#575757;
+  text-align: center;
 }

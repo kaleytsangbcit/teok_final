@@ -1,0 +1,30 @@
+.leftarrow {
+    position: absolute;
+    top:26px;
+    left:22px;
+  }
+
+.nav {
+    position: absolute;
+    top:15px;
+    left: 310px;
+  }
+
+.MusicTitle {
+    position: absolute;
+    left: 60px;
+    margin: auto;
+}
+
+.sound {
+    position: absolute;
+    margin: auto;
+    top: 35px;
+    right: 12px;
+
+}
+
+.prevNext {
+  position: absolute;
+  right: 40px;
+}

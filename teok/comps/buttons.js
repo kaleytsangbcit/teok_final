@@ -39,9 +39,9 @@ const GreenButton = styled.button`
 const GreenButtonChangeMusic = styled.button`
     background:#9ED292;
     text-align:center;
-    font-size:24px;
+    font-size:18px;
     padding-right:5px;
-    width:220px;
+    width:180px;
     height:60px;
     border-radius:50px;
     color:#292929;

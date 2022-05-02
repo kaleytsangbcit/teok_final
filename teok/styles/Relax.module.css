@@ -87,7 +87,7 @@
 
 .logowithbreathing {
   position:absolute;
-  top:460px;
+  top:500px;
   left:120px;
 }
 
@@ -98,7 +98,7 @@
 .breathingcircle {
   color: transparent;
   position: absolute;
-  top: 520px;
+  top: 560px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70px;

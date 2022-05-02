@@ -56,6 +56,25 @@ const SmallButton = styled.button`
     margin-top:30px;
 `
 
+const GetTipButton = styled.button`
+    background:#9ED292;
+    text-align:center;
+    font-size:18px;
+    font-weight: bold;
+    padding-right:5px;
+    width:150px;
+    height:50px;
+    border-radius:50px;
+    color:#292929;
+    border-color:white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:30px;
+`
+
 const SmallButton2 = styled.button`
     background:#69A5CA;
     text-align:center;
@@ -173,10 +192,10 @@ export function MusicButton(){
 
 export function GetTip(){
     const r = useRouter();
-    return <SmallButton onClick={
+    return <GetTipButton onClick={
         ()=>r.push("/tips")}>
         Get Tips
-    </SmallButton>
+    </GetTipButton>
 }
 
 export function LeftArrow(){

@@ -17,7 +17,6 @@ const BlueButton = styled.button`
     justify-content: center;
     margin:auto;
     margin-top:30px;
-
 `
 
 const GreenButton = styled.button`
@@ -36,8 +35,25 @@ const GreenButton = styled.button`
     justify-content: center;
     margin:auto;
     margin-top:30px;
-
 `
+const GreenButtonChangeMusic = styled.button`
+    background:#9ED292;
+    text-align:center;
+    font-size:24px;
+    padding-right:5px;
+    width:220px;
+    height:60px;
+    border-radius:50px;
+    color:#292929;
+    border-color:white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:30px;
+`
+
 const SmallButton = styled.button`
     background:#9ED292;
     text-align:center;
@@ -130,22 +146,30 @@ export function StartButton(){
 
 
 
-export function StartButtonWithIcon(){
+export function ChangeMusicButton(){
+    const r = useRouter();
+    return <GreenButtonChangeMusic onClick={
+        ()=>r.push("/start_relax")}>
+        Change Music
+    </GreenButtonChangeMusic>
+}  
 
-    const animation = (event) => {
-        // event.target.classList.add('breathingcircle');
-        //innertext = "Pause";
-        console.log("click");
-    }
 
-    return <GreenButton 
-        onClick={animation}
-    >
-        Start
-        <img src="/play.png" alt="play icon" />  
-    </GreenButton>
-}
+// export function StartButtonWithIcon(){
 
+//     const animation = (event) => {
+//         // event.target.classList.add('breathingcircle');
+//         //innertext = "Pause";
+//         console.log("click");
+//     }
+
+//     return <GreenButton 
+//         onClick={animation}
+//     >
+//         Start
+//         <img src="/play.png" alt="play icon" />  
+//     </GreenButton>
+// }
 
 
 export function NextButton(){

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import styles from '../../styles/Relax.module.css'
-import { StartButtonWithIcon, LeftArrow  } from '../../comps/buttons';
+import { ChangeMusicButton, LeftArrow  } from '../../comps/buttons';
 import { NavBar } from '../../comps/navbar';
 import { GetName } from '../../pages/data/name_content';
 
@@ -79,7 +79,7 @@ export default class Timer extends Component {
           </div>
 
           <div className={styles.startwithicon}>
-            <StartButtonWithIcon></StartButtonWithIcon>
+            <ChangeMusicButton></ChangeMusicButton>
           </div>
 
         </div>

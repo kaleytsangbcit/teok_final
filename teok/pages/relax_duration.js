@@ -21,7 +21,7 @@ export default function Main(){
     <img src="/progress_bar_2.png" alt="Progress Bar Stage 2" />  
     </div>
     <text className={styles.bubbleText}>
-      Hi {nm}
+      {nm}
     </text>
     <text className={styles.text}>
         How long would you like to relax for?

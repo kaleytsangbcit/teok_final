@@ -35,8 +35,9 @@
 }
 
 #bubbleText {
-  font-family: 'Indie Flower', cursive;
-  font-size:30px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size:40px;
+  color:#515253;
   position:relative;
   top:-220px;
   left:10px;

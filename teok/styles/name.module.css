@@ -8,9 +8,10 @@
   .bubbleName {
     position:absolute;
     top:20px;
-    left:16px;
-    font-family: 'Indie Flower', cursive;
-    font-size:25px;
+    left:0px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:38px;
+    color:#515253;
   }
   
   .bubble {

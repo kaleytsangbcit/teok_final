@@ -13,15 +13,16 @@
     position:absolute;
     top:230px;
     left:30px;
-    font-family: 'Indie Flower', cursive;
-    font-size:30px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:42px;
+    color:#515253;
   }
   
   .bubbleName {
     position:absolute;
     top:10px;
     left:16px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Nanum Pen Script', cursive;
     font-size:25px;
   }
   

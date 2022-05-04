@@ -26,10 +26,10 @@
 
 .bubbleText {
     position:absolute;
-    top:18px;
-    left:46px;
+    top:10px;
+    left:38px;
     font-family: 'Nanum Pen Script', cursive;
-    font-size:42px;
+    font-size:32px;
     color:#515253;
   }
 

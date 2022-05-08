@@ -67,7 +67,7 @@ export default function Main(){
             <text>Natural</text>
         </Nature>
         <NatureButton
-            bg={(sel === 0) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 0) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
               ()=>setSel(0)
             }
@@ -76,7 +76,7 @@ export default function Main(){
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton
-            bg={(sel === 1) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 1) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(1)
         }
@@ -85,7 +85,7 @@ export default function Main(){
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton
-            bg={(sel === 2) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 2) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(2)}
         >
@@ -93,7 +93,7 @@ export default function Main(){
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton
-            bg={(sel === 3) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 3) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(3)}
         >
@@ -101,7 +101,7 @@ export default function Main(){
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton 
-            bg={(sel === 4) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 4) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(4)}
         >
@@ -109,7 +109,7 @@ export default function Main(){
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton 
-            bg={(sel === 5) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 5) ? "#F6BBC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(5)}
         >
@@ -117,7 +117,7 @@ export default function Main(){
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton 
-            bg={(sel === 6) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 6) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(6)}
         >
@@ -125,7 +125,7 @@ export default function Main(){
             <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
         </NatureButton>
         <NatureButton  
-            bg={(sel === 7) ? "#FFCFD5" : "#ADCBDE"}
+            bg={(sel === 7) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(7)}
         >

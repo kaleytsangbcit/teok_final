@@ -251,6 +251,14 @@ export function LeftArrow(){
         <img src="/leftarrow.png" alt="back icon" /> 
     </Arrow>
 }
+export function LeftArrowForMusic(){
+    const r = useRouter();
+    var audio = document.getElementById('ai');
+    return <Arrow onClick={
+        ()=> {r.back(); audio.pause()}}>
+        <img src="/leftarrow.png" alt="back icon" /> 
+    </Arrow>
+}
 
 export function NextButton2(){
     const r = useRouter();

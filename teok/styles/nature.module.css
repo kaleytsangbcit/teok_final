@@ -14,14 +14,16 @@
     position: absolute;
     left: 30px;
     margin: auto;
-}
+    font-size: 15px;
+    font-weight: bold;
+  }
 
 .sound {
     position: absolute;
     margin: auto;
     top: 22px;
     right: 16px;
-    width:28px;
+    width:22px;
 }
 
 .prevNext {

@@ -45,7 +45,19 @@ const ShowCont = styled.div`
 
 let isSubmitted = false;
 
+const aud = [
+    "/audio/Nature/blueRain.mp3", "/audio/Nature/blueWater.mp3", "/audio/Nature/greenForest.mp3", "/audio/Nature/greenWind.mp3", "/audio/Nature/redFire.mp3", "/audio/Nature/redFireplace.mp3", "/audio/Nature/yellowBird.mp3", "/audio/Nature/yellowBird2.mp3"
+]
+
 export default function Main(){
+
+    function play(sel) {
+        var audio = document.getElementById('ai');
+        console.log(audio);
+        // audio.src = aud[sel]
+        audio.src = aud[sel]
+        audio.play();
+    }
 
     const [sel, setSel] = useState(1);
     const r = useRouter();
@@ -72,8 +84,8 @@ export default function Main(){
               ()=>setSel(0)
             }
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Rain</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(0)}/>
         </NatureButton>
         <NatureButton
             bg={(sel === 1) ? "#FCBAC2" : "#ADCBDE"}
@@ -81,56 +93,56 @@ export default function Main(){
             ()=>setSel(1)
         }
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Ocean Waves</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(1)}/>
         </NatureButton>
         <NatureButton
             bg={(sel === 2) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(2)}
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Forest</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(2)}/>
         </NatureButton>
         <NatureButton
             bg={(sel === 3) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(3)}
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Wind</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(3)}/>
         </NatureButton>
         <NatureButton 
             bg={(sel === 4) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(4)}
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Calm Fire</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(4)}/>
         </NatureButton>
         <NatureButton 
             bg={(sel === 5) ? "#F6BBC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(5)}
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Fireplace</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(5)}/>
         </NatureButton>
         <NatureButton 
             bg={(sel === 6) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(6)}
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Bird</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(6)}/>
         </NatureButton>
         <NatureButton  
             bg={(sel === 7) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
             ()=>setSel(7)}
         >
-            <text className={styles.MusicTitle}>Ocean Sound</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound"/>
+            <text className={styles.MusicTitle}>Bird</text>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(7)}/>
         </NatureButton>
 
         <div className={styles.prevNext}>

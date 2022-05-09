@@ -4,19 +4,20 @@ import styles from '../../styles/Relax.module.css'
 import { ChangeMusicButton, LeftArrow  } from '../../comps/buttons';
 import { NavBar } from '../../comps/navbar';
 import { GetName } from '../../pages/data/name_content';
-
+import {useState, useEffect} from 'react';
 import React, { Component } from 'react'
 
 export default class Timer extends Component {
   
     state = {
-        minutes: 2,
-        seconds: 0,
+        minutes: 0,
+        seconds: 5,
     }
 
     componentDidMount() {
         this.myInterval = setInterval(() => {
             const { seconds, minutes } = this.state
+            var audio = document.getElementById('ai');
 
             if (seconds > 0) {
                 this.setState(({ seconds }) => ({
@@ -25,7 +26,10 @@ export default class Timer extends Component {
             }
             if (seconds === 0) {
                 if (minutes === 0) {
-                    clearInterval(this.myInterval)
+                    clearInterval(this.myInterval);
+                    console.log("pause music");
+                    audio.pause();
+
                 } else {
                     this.setState(({ minutes }) => ({
                         minutes: minutes - 1,
@@ -41,8 +45,10 @@ export default class Timer extends Component {
     }
 
     render() {
-      const { minutes, seconds } = this.state
+      const { minutes, seconds } = this.state;
       const nm = GetName();
+
+
       
       return (
         <div>
@@ -65,7 +71,7 @@ export default class Timer extends Component {
 
           <div className={styles.timer}>
               { minutes === 0 && seconds === 0
-                ? <h1>How do you feel now?</h1>
+                ? <h1>How do you feel now?</h1> 
                   : <h1> {minutes} : {seconds < 10 ? `0${seconds}` : seconds}</h1>
               }
           </div>

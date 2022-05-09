@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Router, useRouter } from 'next/router';
 
+
 const BlueButton = styled.button`
     background:#69A5CA;
     text-align:center;
@@ -111,7 +112,7 @@ const GetTipButton = styled.button`
 const SmallButton2 = styled.button`
     background:#69A5CA;
     text-align:center;
-    font-size:14px;
+    font-size:16px;
     padding-right:5px;
     width:109px;
     height:38px;
@@ -184,8 +185,11 @@ export function StartButton(){
 
 export function ChangeMusicButton(){
     const r = useRouter();
-    return <GreenButtonChangeMusic onClick={
-        ()=>r.push("/start_relax")}>
+    var audio = document.getElementById('ai');
+    return <GreenButtonChangeMusic onClick={()=>
+    {r.push("/start_relax");
+    audio.pause()}
+    }>
         Change Music
     </GreenButtonChangeMusic>
 }  

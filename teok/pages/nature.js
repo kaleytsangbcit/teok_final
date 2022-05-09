@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from '../styles/nature.module.css'
 import { NavBar } from '../comps/navbar';
 import { useRouter } from 'next/router';
-import { MusicBar, LeftArrow, NextButton2 } from "../comps/buttons";
+import { MusicBar, LeftArrowForMusic, NextButton2 } from "../comps/buttons";
 import {useState, useEffect} from 'react';
 
 const NatureButton = styled.button`
@@ -33,7 +33,7 @@ const Nature = styled.button`
     position: relative;
     margin:auto;
     margin-top:60px;
-    margin-bottom:60px;
+    margin-bottom:40px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -71,7 +71,7 @@ export default function Main(){
 
     return <div>
         <div className={styles.leftarrow}>
-            <LeftArrow></LeftArrow>
+            <LeftArrowForMusic></LeftArrowForMusic>
         </div> 
         <div className={styles.nav}>
         <NavBar></NavBar>

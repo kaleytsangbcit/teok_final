@@ -42,7 +42,7 @@ const Nature = styled.button`
     position: relative;
     margin:auto;
     margin-top:60px;
-    margin-bottom:60px;
+    margin-bottom:40px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -88,67 +88,68 @@ export default function Main(){
         <NatureButton
             bg={(sel === 0) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-              ()=>setSel(0)
+              ()=>{setSel(0); play(0)}
             }
 
         >
             <text className={styles.MusicTitle}>Sailing</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(0)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton
             bg={(sel === 1) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(1)
+            ()=>{setSel(1); play(1)}
         }
             
         >
             <text className={styles.MusicTitle}>Falling Snow</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(1)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton
             bg={(sel === 2) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(2)}
+            ()=>{setSel(2); play(2)}
+            }
         >
             <text className={styles.MusicTitle}>Everything</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(2)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton
             bg={(sel === 3) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(3)}
+            ()=>{setSel(3); play(3)}}
         >
             <text className={styles.MusicTitle}>Farewell</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(3)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton 
             bg={(sel === 4) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(4)}
+            ()=>{setSel(4); play(4)}}
         >
             <text className={styles.MusicTitle}>Campfire</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(4)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton 
             bg={(sel === 5) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(5)}
+            ()=>{setSel(5); play(5)}}
         >
             <text className={styles.MusicTitle}>Naptime</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(5)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton 
             bg={(sel === 6) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(6)}
+            ()=>{setSel(6); play(6)}}
         >
             <text className={styles.MusicTitle}>Resolve</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(6)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton  
             bg={(sel === 7) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(7)}
+            ()=>{setSel(7); play(7)}}
         >
             <text className={styles.MusicTitle}>Autumn Wind</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(7)}/>

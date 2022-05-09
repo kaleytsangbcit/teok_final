@@ -19,9 +19,9 @@
 .sound {
     position: absolute;
     margin: auto;
-    top: 35px;
-    right: 12px;
-
+    top: 22px;
+    right: 16px;
+    width:28px;
 }
 
 .prevNext {

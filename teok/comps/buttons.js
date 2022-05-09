@@ -18,6 +18,23 @@ const BlueButton = styled.button`
     margin:auto;
     margin-top:30px;
 `
+const BlueButton2 = styled.button`
+    background:#69A5CA;
+    text-align:center;
+    font-size:20px;
+    padding-right:5px;
+    width:160px;
+    height:60px;
+    border-radius:50px;
+    color:white;
+    border-color:white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-top:30px;
+`
 
 const GreenButton = styled.button`
     background:#9ED292;
@@ -201,18 +218,18 @@ export function NextButton(){
 
 export function NatureButton(){
     const r = useRouter();
-    return <BlueButton onClick={
+    return <BlueButton2 onClick={
         ()=>r.push("/nature")}>
-        Nature
-    </BlueButton>
+        Natural
+    </BlueButton2>
 }
 
 export function MusicButton(){
     const r = useRouter();
-    return <BlueButton onClick={
+    return <BlueButton2 onClick={
         ()=>r.push("/music")}>
-        Music
-    </BlueButton>
+        Instrumental
+    </BlueButton2>
 }
 
 export function GetTip(){

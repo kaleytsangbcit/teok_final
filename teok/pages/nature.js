@@ -37,6 +37,7 @@ const Nature = styled.button`
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
+    color:#FFFFFF
 `
 
 const ShowCont = styled.div`

@@ -82,16 +82,16 @@ export default function Main(){
         <NatureButton
             bg={(sel === 0) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-              ()=>setSel(0)
+              ()=>{setSel(0);play(0)}
             }
         >
             <text className={styles.MusicTitle}>Rain</text>
-            <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(0)}/>
+            <img className={styles.sound} src="/sound_icon.png" alt="sound" />
         </NatureButton>
         <NatureButton
             bg={(sel === 1) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(1)
+            ()=>{setSel(1);play(1)}
         }
         >
             <text className={styles.MusicTitle}>Ocean Waves</text>
@@ -100,7 +100,7 @@ export default function Main(){
         <NatureButton
             bg={(sel === 2) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(2)}
+            ()=>{setSel(2);play(2)}}
         >
             <text className={styles.MusicTitle}>Forest</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(2)}/>
@@ -108,7 +108,7 @@ export default function Main(){
         <NatureButton
             bg={(sel === 3) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(3)}
+            ()=>{setSel(3);play(3)}}
         >
             <text className={styles.MusicTitle}>Wind</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(3)}/>
@@ -116,7 +116,7 @@ export default function Main(){
         <NatureButton 
             bg={(sel === 4) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(4)}
+            ()=>{setSel(4);play(4)}}
         >
             <text className={styles.MusicTitle}>Calm Fire</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(4)}/>
@@ -124,7 +124,7 @@ export default function Main(){
         <NatureButton 
             bg={(sel === 5) ? "#F6BBC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(5)}
+            ()=>{setSel(5);play(5)}}
         >
             <text className={styles.MusicTitle}>Fireplace</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(5)}/>
@@ -132,7 +132,7 @@ export default function Main(){
         <NatureButton 
             bg={(sel === 6) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(6)}
+            ()=>{setSel(6);play(6)}}
         >
             <text className={styles.MusicTitle}>Bird</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(6)}/>
@@ -140,7 +140,7 @@ export default function Main(){
         <NatureButton  
             bg={(sel === 7) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
-            ()=>setSel(7)}
+            ()=>{setSel(7);play(7)}}
         >
             <text className={styles.MusicTitle}>Bird</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(7)}/>

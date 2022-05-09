@@ -71,7 +71,7 @@ export default function Main(){
         qnum = 0;
     }
 
-    const src=aud[sel]
+    // const src=aud[sel]
     
     return <div>
 

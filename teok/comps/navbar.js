@@ -8,8 +8,11 @@ const TeokNav = styled.nav`
  
 export function NavBar(){
     const r = useRouter();
-    return <TeokNav onClick={
-        ()=>r.push("/start_relax")}>
+    var audio = document.getElementById('ai');
+    return <TeokNav onClick={()=>
+        {r.push("/start_relax");
+        audio.pause()}
+        }>
         <img src="/HomeBtn.png" alt="home"/>
     </TeokNav>
 }

@@ -46,6 +46,7 @@ const Nature = styled.button`
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
+    color: #FFFFFF
 `
 //put all your src link into the array
 const aud = [
@@ -82,15 +83,16 @@ export default function Main(){
         <NavBar></NavBar>
         </div>
         <Nature>
-            <text >Music</text>
+            <text >Instrumental</text>
         </Nature>
         <NatureButton
             bg={(sel === 0) ? "#FCBAC2" : "#ADCBDE"}
             onClick={
               ()=>setSel(0)
             }
+
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Sailing</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(0)}/>
         </NatureButton>
         <NatureButton
@@ -100,7 +102,7 @@ export default function Main(){
         }
             
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Falling Snow</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(1)}/>
         </NatureButton>
         <NatureButton
@@ -108,7 +110,7 @@ export default function Main(){
             onClick={
             ()=>setSel(2)}
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Everything</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(2)}/>
         </NatureButton>
         <NatureButton
@@ -116,7 +118,7 @@ export default function Main(){
             onClick={
             ()=>setSel(3)}
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Farewell</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(3)}/>
         </NatureButton>
         <NatureButton 
@@ -124,7 +126,7 @@ export default function Main(){
             onClick={
             ()=>setSel(4)}
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Campfire</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(4)}/>
         </NatureButton>
         <NatureButton 
@@ -132,7 +134,7 @@ export default function Main(){
             onClick={
             ()=>setSel(5)}
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Naptime</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(5)}/>
         </NatureButton>
         <NatureButton 
@@ -140,7 +142,7 @@ export default function Main(){
             onClick={
             ()=>setSel(6)}
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Resolve</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(6)}/>
         </NatureButton>
         <NatureButton  
@@ -148,7 +150,7 @@ export default function Main(){
             onClick={
             ()=>setSel(7)}
         >
-            <text className={styles.MusicTitle}>Music</text>
+            <text className={styles.MusicTitle}>Autumn Wind</text>
             <img className={styles.sound} src="/sound_icon.png" alt="sound" onClick={()=>play(7)}/>
         </NatureButton>
 

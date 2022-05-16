@@ -272,39 +272,17 @@ export function NextButton2(){
 }
 
 export function SmallBtn(){
-    
-  var {qnum} = r.query;
-  if(qnum === undefined){
-    qnum = 0;
-  }
+
     const r = useRouter();
     return <SmallButton3 onClick={
-        ()=>r.back({
-          pathname:"/questions",
-          query:{
-            qnum:Number(qnum)+1 > qs.length - 1 ? qs.length-1 : Number(qnum)+1
-          }
-        })
-      }>
+        ()=>r.push("/questionB")}>
             Next
     </SmallButton3>
 }
 export function SmallBtn2(){
-
-
-  var {qnum} = r.query;
-  if(qnum === undefined){
-    qnum = 0;
-  }
     const r = useRouter();
     return <SmallButton3 onClick={
-        ()=>r.back({
-          pathname:"/questions",
-          query:{
-            qnum:Number(qnum)+1 > qs.length - 1 ? qs.length-1 : Number(qnum)+1
-          }
-        })
-      }>
+        ()=>r.push("/questionA")}>
             Previous
     </SmallButton3>
 }

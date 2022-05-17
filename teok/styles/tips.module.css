@@ -26,7 +26,7 @@
 
 .bubbleText {
     position:absolute;
-    top:4px;
+    top:-100px;
     left:38px;
     font-family: 'Nanum Pen Script', cursive;
     font-size:32px;
@@ -45,6 +45,7 @@
     width: 20%;
 } */
 
+
 .prevNext{
     display: flex;
     /* justify-content: flex-end; */
@@ -53,10 +54,9 @@
     top: 520px;
     left: 30px;
     /* padding-right: 10px; */
-    
-
     /* padding-top: 60%; */
 }
+
 
 
 .logo {
@@ -74,28 +74,23 @@
 }
 
 .itemList1{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 170px;
+    position: absolute;
+    top: 670px;
+    left: 36px
 }
 
-.colBtn{
+.itemList2{
+    position: absolute;
+    top: 670px;
+    left: 220px
+}
+
+
+.colBtn {
     position: relative;
     padding: 10px;
     width: 70%;
     padding-top: 30px;
-}
-
-.itemList2{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 150px;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-
 }
 
 .colName{
@@ -104,3 +99,4 @@
     padding-left: 45px;
     /* margin: auto; */
 }
+

@@ -133,23 +133,23 @@ const SmallButton2 = styled.button`
 const Arrow = styled.div`
 `
 
-const SmallButton3 = styled.button`
-    background:#69A5CA;
-    text-align:center;
-    font-size:14px;
-    padding-right:5px;
-    width:109px;
-    height:38px;
-    border-radius:50px;
-    color:#FFFFFF;
-    border-color:white;
-    font-family: 'Montserrat', sans-serif;
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    margin:25px;
-    margin-top:30px;
-`
+// const SmallButton3 = styled.button`
+//     background:#69A5CA;
+//     text-align:center;
+//     font-size:14px;
+//     padding-right:5px;
+//     width:109px;
+//     height:38px;
+//     border-radius:50px;
+//     color:#FFFFFF;
+//     border-color:white;
+//     font-family: 'Montserrat', sans-serif;
+//     align-items: center;
+//     display:flex;
+//     justify-content: center;
+//     margin:25px;
+//     margin-top:30px;
+// `
 
 export function TwoMinButton(){
     const r = useRouter();
@@ -179,7 +179,7 @@ export function TenMinButton(){
 export function StartButton(){
     const r = useRouter();
     return <GreenButton onClick={
-        ()=>r.push("/questionA")}>
+        ()=>r.push("/questions")}>
         Start
     </GreenButton>
 }    

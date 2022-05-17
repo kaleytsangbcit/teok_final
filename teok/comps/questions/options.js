@@ -4,9 +4,19 @@ import { ChangeAnswers } from '../../pages/data/que_content';
 // import styles from '../styles/question.module.css'
 
 
-const OpsCont = styled.div``;
+const OpsCont = styled.div`
+top:800px;
+left:65px;`;
 
-const OpsTitle = styled.h3``;
+const OpsTitle = styled.h3`
+position:absolute;
+width:260px;
+top:64px;
+left:92px;
+font-family: 'Nanum Pen Script', cursive;
+font-size:32px;
+color:#515253;
+`;
 
 // const OpsButton = styled.button`
 

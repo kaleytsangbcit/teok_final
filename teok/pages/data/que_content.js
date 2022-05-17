@@ -4,16 +4,16 @@ export const header = "Answer these questions!";
 
 export const qs = [
     {
-        title:"How are you doing?",
+        title:"  Which activities are you in the mood for?",
         ops:["/outdoor.png", "/indoor.png"]
     },
     {
-        title:"How are you feeling?",
+        title:"How do you currently?",
         ops:["/cold.png", "warm.png"]
     },
     {
-        title:"What are you planning to do?",
-        ops:["/teok_icon2.png", "/teok_icon2.png", "/teok_icon2.png"]
+        title:"What colour do you currently feel like?",
+        ops:["/teok_icon2.png", "/teok_icon2.png", "/teok_icon2.png", "/teok_icon2.png"]
     }
 ]
 

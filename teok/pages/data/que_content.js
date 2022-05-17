@@ -4,7 +4,7 @@ export const header = "Answer these questions!";
 
 export const qs = [
     {
-        title:"  Which activities are you in the mood for?",
+        title:"Which activities are you in the mood for?",
         ops:["/outdoor.png", "/indoor.png"]
     },
     {

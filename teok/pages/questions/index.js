@@ -10,18 +10,18 @@ import { NavBar } from "../../comps/navbar";
 
 const Bubble = styled.div`
 position: relative;
-top:106px;
-left:60px;
+top:94px;
+left:64px;
 width:300px;
 `
 
 const SmallButton3 = styled.button`
     background:#69A5CA;
     text-align:center;
-    font-size:14px;
+    font-size:16px;
     padding-right:5px;
-    width:109px;
-    height:38px;
+    width:120px;
+    height:50px;
     border-radius:50px;
     color:#FFFFFF;
     border-color:white;
@@ -46,10 +46,7 @@ export default function Questions(){
     {/* <hr />
     Answer Some Questions */}
 
-    <Options 
-      q={qs[qnum].title}
-      arr={qs[qnum].ops}
-    />
+
 {/* className="preBtn" */}
 
 <div className={styles.leftarrow}>
@@ -63,10 +60,14 @@ export default function Questions(){
 <Bubble>
   <img src="/bubble.png" alt="Dialogue bubble" />   
   <text className={styles.bubbleText}>
-  Which activities are you in the mood for?
   </text> 
   <img id={styles.logo} src="/logo.png" alt="Teok Logo" /> 
 </Bubble>
+
+<Options 
+      q={qs[qnum].title}
+      arr={qs[qnum].ops}
+    />
 
 <div className={styles.itemList1}>
   {
@@ -82,7 +83,7 @@ export default function Questions(){
   }
 </div>
 
-<div className={styles.itemList1}>
+<div className={styles.itemList2}>
   {
     Number(qnum) < qs.length - 1 &&
       <SmallButton3 onClick={

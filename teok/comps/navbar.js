@@ -9,9 +9,9 @@ const TeokNav = styled.nav`
  
 export function NavBar(){
     const r = useRouter()
-    var audio = document.getElementById('ai')
     return <TeokNav onClick={()=>
         {r.push("/start_relax");
+        var audio = document.getElementById('ai')
         audio.pause()}
         }>
         <img src="/HomeBtn.png" alt="home"/>

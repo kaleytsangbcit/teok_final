@@ -57,6 +57,7 @@ export default function Main(){
         console.log(audio);
         // audio.src = aud[sel]
         audio.src = aud[sel]
+        audio.loop=true;
         audio.play();
     }
 

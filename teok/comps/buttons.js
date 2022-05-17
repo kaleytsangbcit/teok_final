@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { Router, useRouter } from 'next/router';
+// import Options from './questions/options';
+// import { qs } from '../pages/data/que_content';
+
 
 
 const BlueButton = styled.button`
@@ -269,6 +272,7 @@ export function NextButton2(){
 }
 
 export function SmallBtn(){
+
     const r = useRouter();
     return <SmallButton3 onClick={
         ()=>r.push("/questionB")}>
@@ -278,11 +282,12 @@ export function SmallBtn(){
 export function SmallBtn2(){
     const r = useRouter();
     return <SmallButton3 onClick={
-        ()=>r.back()}>
+        ()=>r.push("/questionA")}>
             Previous
     </SmallButton3>
 }
 export function SmallBtn3(){
+
     const r = useRouter();
     return <SmallButton3 onClick={
         ()=>r.push("/questionC")}>

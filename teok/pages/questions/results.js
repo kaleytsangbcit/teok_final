@@ -23,7 +23,7 @@ const NatureButton = styled.button`
 
 export default function QResults() {
     
-    const [sel, setSel] = useState(1);
+    const [sel, setSel] = useState(-1);
 
     function play(src) {
         var audio = document.getElementById('ai');

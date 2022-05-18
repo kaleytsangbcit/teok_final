@@ -4,11 +4,11 @@ export const qs = [
     {
         title:"  Which activities are you in the mood for?",
         ops:[{
-            img:"/outdoor.png",
+            img:"/outdoor2.png",
             text:"outdoor"
         }, 
         {
-            img:"/indoor.png",
+            img:"/indoor2.png",
             text:"indoor"
         }]
 
@@ -16,11 +16,11 @@ export const qs = [
     {
         title:"How do you currently feel?",
         ops:[{
-            img:"/cold.png",
+            img:"/cold2.png",
             text:"cold"
         },
         {
-            img:"warm.png",
+            img:"warm2.png",
             text:"warm"
         }]
     },

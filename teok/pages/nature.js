@@ -61,7 +61,7 @@ export default function Main(){
         audio.play();
     }
 
-    const [sel, setSel] = useState(1);
+    const [sel, setSel] = useState(-1);
     const r = useRouter();
     var {qnum} = r.query
 

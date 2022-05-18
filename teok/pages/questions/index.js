@@ -86,7 +86,7 @@ export default function Questions(){
 
 <Options 
       q={qs[qnum].title}
-      arr={qnum== 2? qs[qnum][an.heat] : qs[qnum].ops}
+      arr={qnum== 2? qs[qnum][an.temp] : qs[qnum].ops}
     />
 
 <div className={styles.itemList1}>

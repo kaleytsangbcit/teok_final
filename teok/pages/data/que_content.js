@@ -94,41 +94,41 @@ export const res = {
         red:[
             {
                 name:"Campfire",
-                src:"/audio/Nature/redCampfire.mp3"
+                src:"/audio/Colorsongs/redCampfire.mp3"
             },
             {
                 name:"Nap Time",
-                src:"/audio/Nature/redNaptime.mp3"
+                src:"/audio/Colorsongs/redNaptime.mp3"
             },
         ],
         yellow:[
             {
                 name:"Autumn",
-                src:"/audio/Nature/yellowAutumn.mp3"
+                src:"/audio/Colorsongs/yellowAutumn.mp3"
             },
             {
                 name:"Resolve",
-                src:"/audio/Nature/yellowResolve.mp3"
+                src:"/audio/Colorsongs/yellowResolve.mp3"
             },
         ],
         green:[
             {
                 name:"Everything",
-                src:"/audio/Nature/greenEverything.mp3"
+                src:"/audio/Colorsongs/greenEverything.mp3"
             },
             {
                 name:"Farewell",
-                src:"/audio/Nature/greenFarewell.mp3"
+                src:"/audio/Colorsongs/greenFarewell.mp3"
             },
         ],
         blue:[
             {
                 name:"Sailing",
-                src:"/audio/Nature/blueSailing.mp3"
+                src:"/audio/Colorsongs/blueSailing.mp3"
             },
             {
                 name:"Snow",
-                src:"/audio/Nature/blueSnow.mp3"
+                src:"/audio/Colorsongs/blueSnow.mp3"
             },
         ]
     }
@@ -137,7 +137,7 @@ export const res = {
 //Storing the answers
 var answers = {
     place:null,
-    heat:null,
+    temp:null,
     col:null
 }
 
@@ -147,7 +147,7 @@ export function ChangeAnswers(n, qnum){
     if(qnum === 0){
         answers.place = n;
     }if(qnum === 1){
-        answers.heat = n;
+        answers.temp = n;
     }if(qnum === 2){
         answers.col = n;
     }

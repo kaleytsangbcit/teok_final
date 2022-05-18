@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import styles from '../../styles/Relax.module.css'
-import { ChangeMusicButton, LeftArrow  } from '../../comps/buttons';
-import { NavBar } from '../../comps/navbar';
-import { GetName } from '../../pages/data/name_content';
+import styles from '../styles/Relax.module.css'
+import { ChangeMusicButton, LeftArrow  } from '../comps/buttons';
+import { NavBar } from '../comps/navbar';
+import { GetName } from './data/name_content';
 import {useState, useEffect} from 'react';
 import React, { Component } from 'react'
 
 export default class Timer extends Component {
   
     state = {
-        minutes: 0,
-        seconds: 5,
+        minutes: 2,
+        seconds: 0,
     }
 
     componentDidMount() {
@@ -66,7 +66,7 @@ export default class Timer extends Component {
             {nm}
           </text>
           <text className={styles.text}>
-            Let's practice breathing by following Teok
+            Let's follow the bubbles to do the breathing exercise
           </text>
 
           <div className={styles.timer}>

@@ -5,7 +5,6 @@ import Options from "../../comps/questions/options";
 import { useRouter } from "next/router";
 import styles from '../../styles/tips.module.css';
 import styled from 'styled-components';
-import { LeftArrow } from "../../comps/buttons";
 import { NavBar } from "../../comps/navbar";
 
 const Bubble = styled.div`
@@ -69,9 +68,6 @@ export default function Questions(){
 
 {/* className="preBtn" */}
 
-<div className={styles.leftarrow}>
-  <LeftArrow></LeftArrow>
-</div>
 
 <div className={styles.nav}>
   <NavBar></NavBar>

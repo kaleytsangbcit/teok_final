@@ -59,6 +59,7 @@ export default function Options({
     qnum = 0;
   }
 
+  qnum = Number(qnum);
   function handleClick(o, i){
     ChangeAnswers(o, qnum)
     setSel(i)
@@ -68,8 +69,8 @@ export default function Options({
     <OpsTitle>{q}</OpsTitle>
     <OpsCont>
     {
-      arr.map((o,i)=><OpsDiv style={{background: i == sel ? "pink": "white"}}><img src={o} onClick={
-        ()=>handleClick(o, i)
+      arr.map((o,i)=><OpsDiv style={{background: i == sel ? "pink": "white"}}><img src={o.img} onClick={
+        ()=>handleClick(o.text, i)
       } /></OpsDiv>)
     }
     </OpsCont>

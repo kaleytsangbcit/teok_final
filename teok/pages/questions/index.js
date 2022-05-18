@@ -1,4 +1,4 @@
-import { qs } from "../data/que_content";
+import { qs, GetAnswers } from "../data/que_content";
 
 import Options from "../../comps/questions/options";
 
@@ -32,9 +32,30 @@ const SmallButton3 = styled.button`
     margin:25px;
     margin-top:30px;
 `
+const SmallButton4 = styled.button`
+    background:#9ED292;
+    text-align:center;
+    font-size:16px;
+    padding-right:5px;
+    width:120px;
+    height:50px;
+    border-radius:50px;
+    color:#FFFFFF;
+    border-color:white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin:25px;
+    margin-top:30px;
+    position: relative;
+    top: 350px;
+    left: 110px;
+`
 
 export default function Questions(){
 
+  const an = GetAnswers();
   const r = useRouter();
 
   var {qnum} = r.query;
@@ -46,16 +67,15 @@ export default function Questions(){
     {/* <hr />
     Answer Some Questions */}
 
-
 {/* className="preBtn" */}
 
 <div className={styles.leftarrow}>
   <LeftArrow></LeftArrow>
 </div>
-{/* 
+
 <div className={styles.nav}>
   <NavBar></NavBar>
-</div> */}
+</div>
 
 <Bubble>
   <img src="/bubble.png" alt="Dialogue bubble" />   
@@ -66,7 +86,7 @@ export default function Questions(){
 
 <Options 
       q={qs[qnum].title}
-      arr={qs[qnum].ops}
+      arr={qnum== 2? qs[qnum][an.temp] : qs[qnum].ops}
     />
 
 <div className={styles.itemList1}>
@@ -99,9 +119,9 @@ export default function Questions(){
 
 {
   Number(qnum) >= qs.length - 1 &&
-  <button onClick={
+  <SmallButton4 onClick={
     ()=>r.push("/questions/results")
-  }>Go to Results!</button>
+  }>Get Tips!</SmallButton4>
 }
 
   </div>

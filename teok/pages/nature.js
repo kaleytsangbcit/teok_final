@@ -74,9 +74,7 @@ export default function Main(){
         <div className={styles.leftarrow}>
             <LeftArrowForMusic></LeftArrowForMusic>
         </div> 
-        <div className={styles.nav}>
-        <NavBar></NavBar>
-        </div>
+
         <Nature>
             <text>Natural</text>
         </Nature>

@@ -1,23 +1,55 @@
-// import { GetAnswers, res } from "../../data/que_content"
+import { GetAnswers,res } from "../data/que_content"
+// import { NatureButton } from "../../comps/buttons";
+import {useState} from 'react';
+import styled from "styled-components"
+import styles from '../../styles/nature.module.css'
 
 
+const NatureButton = styled.button`
+    background:#ADCBDE;
+    width:322px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin:auto;
+    margin-top:14px;
+    font-family: 'Montserrat', sans-serif;
+    background: ${[props=>props.bg || "#DAA"]};
+    `
 
-// export default function QResults() {
+export default function QResults() {
+    
+    const [sel, setSel] = useState(1);
 
-//     const nm = GetName();
-//     const an = GetAnswers();
-//     return <div>
-//         Here are your results!
-//         <div>
-//             Hi {nm}, I see that you are doing {an[0]}, and you are feeling {an[1]}. This is why you are going to {an[2]}. Is this right?
-//         </div>
+    function play(src) {
+        var audio = document.getElementById('ai');
+        console.log(audio);
+        // audio.src = aud[sel]
+        audio.src = src
+        audio.play();
+    }
+    const an = GetAnswers();
+    console.log(an, res[an.place][an.col]);
+    const musics = res[an.place][an.col]
 
-//         <h3>
-//             {res[an[0]].text[
-//                 Math.round(Math.random()*res[an[0]].length)]
-//             }
-//         </h3>
+    return <div>
+        {
+        musics.map((o,i)=> <NatureButton
+        bg={(sel === i) ? "#FCBAC2" : "#ADCBDE"}
+        onClick={
+          ()=>{setSel(i); play(o.src)}
+        }
 
-//         <img src={res[an[0]].img} />
-//     </div>
-// }
+    >
+        <text className={styles.MusicTitle}>{o.name}</text>
+        <img className={styles.sound} src="/sound_icon.png" alt="sound" />
+    </NatureButton>
+    )
+}
+    </div>
+
+}

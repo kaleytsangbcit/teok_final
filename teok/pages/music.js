@@ -5,15 +5,9 @@ import { useRouter } from 'next/router';
 import { MusicBar, LeftArrowForMusic, NextButton2 } from "../comps/buttons";
 import {useState, useEffect} from 'react';
 import React, {Components} from 'react';
-// import blueSailing from "../public/audio/Colorsongs/blueSailing.mp3";
-// import {Howl, Howler} from "howler";
 
-// const audioClips = [
-//     {sound: blueSailing},
-//     {sound: blueSnow},
-//     {sound: greenEverything},
-//     {sound: greenFarewell}
-// ]
+
+
 const NatureButton = styled.button`
     background:#ADCBDE;
     width:322px;
@@ -64,7 +58,7 @@ export default function Main(){
     }
     
 
-    const [sel, setSel] = useState(1);
+    const [sel, setSel] = useState(-1);
     const r = useRouter();
     var {qnum} = r.query
 

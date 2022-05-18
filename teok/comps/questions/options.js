@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { ChangeAnswers } from '../../pages/data/que_content';
 import { useState } from 'react';
 // import styles from '../styles/question.module.css'
-
+//push
 
 
 const OpsCont = styled.div`

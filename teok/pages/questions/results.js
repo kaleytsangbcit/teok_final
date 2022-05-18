@@ -1,23 +1,34 @@
-// import { GetAnswers, res } from "../../data/que_content"
+import { GetAnswers,res } from "../data/que_content"
+// import { red, yellow, green, blue } from "../data/sound_content";
 
 
 
-// export default function QResults() {
+export default function QResults() {
 
-//     const nm = GetName();
-//     const an = GetAnswers();
-//     return <div>
-//         Here are your results!
-//         <div>
-//             Hi {nm}, I see that you are doing {an[0]}, and you are feeling {an[1]}. This is why you are going to {an[2]}. Is this right?
-//         </div>
+    // function play(src) {
+    //     var audio = document.getElementById('ai');
+    //     console.log(audio);
+    //     // audio.src = aud[sel]
+    //     audio.src = src
+    //     audio.play();
+    // }
+    const an = GetAnswers();
+    console.log(an, res[an.place][an.col]);
+    // const musics = res[an.place][an.col]
+    return <div>
+        {
+    //     musics.map((o,i)=> <NatureButton
+    //     bg={(sel === i) ? "#FCBAC2" : "#ADCBDE"}
+    //     onClick={
+    //       ()=>{setSel(i); play(o.src)}
+    //     }
 
-//         <h3>
-//             {res[an[0]].text[
-//                 Math.round(Math.random()*res[an[0]].length)]
-//             }
-//         </h3>
+    // >
+    //     <text className={styles.MusicTitle}>{o.name}</text>
+    //     <img className={styles.sound} src="/sound_icon.png" alt="sound" />
+    // </NatureButton>
+    // )
+}
+    </div>
 
-//         <img src={res[an[0]].img} />
-//     </div>
-// }
+}

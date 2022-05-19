@@ -23,11 +23,12 @@ align-item: center;
 const OpsTitle = styled.h3`
 position:absolute;
 width:260px;
-top:64px;
-left:92px;
+top:72px;
+left:94px;
 font-family: 'Nanum Pen Script', cursive;
 font-size:32px;
 color:#515253;
+line-height: 0.9;
 `;
 
 const OpsDiv = styled.div`

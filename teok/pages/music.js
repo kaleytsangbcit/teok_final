@@ -74,6 +74,9 @@ export default function Main(){
             <LeftArrowForMusic></LeftArrowForMusic>
         </div> 
 
+
+        <img className={styles.teokie} src="/teokcute2.png" alt="home"/>
+
         <Nature>
             <text >Instrumental</text>
         </Nature>

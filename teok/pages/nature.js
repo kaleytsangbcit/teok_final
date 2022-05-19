@@ -75,8 +75,12 @@ export default function Main(){
             <LeftArrowForMusic></LeftArrowForMusic>
         </div> 
 
+       <img className={styles.teokie2} src="/teokcute3.png" alt="home"/>
+       
+        
         <Nature>
             <text>Natural</text>
+            
         </Nature>
         <NatureButton
             bg={(sel === 0) ? "#FCBAC2" : "#ADCBDE"}

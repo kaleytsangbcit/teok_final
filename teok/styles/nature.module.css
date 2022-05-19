@@ -31,6 +31,17 @@
   right: 40px;
 }
 
-.imgBtn {
-  
+
+.teokie {
+  position: absolute;
+  bottom:35px;
+  width: 180px;
+  left: 30px;;
+}
+
+.teokie2 {
+  position: absolute;
+  bottom:15px;
+  width: 145px;
+  left: 45px;
 }

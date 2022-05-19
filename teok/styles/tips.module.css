@@ -31,6 +31,7 @@
     font-family: 'Nanum Pen Script', cursive;
     font-size:32px;
     color:#515253;
+    
   }
 
 .itemList{
@@ -76,13 +77,13 @@
 .itemList1{
     position: absolute;
     top: 670px;
-    left: 36px
+    left: 20px
 }
 
 .itemList2{
     position: absolute;
     top: 670px;
-    left: 220px
+    left: 200px
 }
 
 
@@ -99,4 +100,3 @@
     padding-left: 45px;
     /* margin: auto; */
 }
-

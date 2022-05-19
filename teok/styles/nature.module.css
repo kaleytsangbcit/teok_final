@@ -30,3 +30,20 @@
   position: absolute;
   right: 40px;
 }
+
+#teokLay {
+  width: 50%;
+  position: absolute;
+  left: 32px;
+}
+
+.bubbleText{
+  position:absolute;
+  width:260px;
+  top: 12px;
+  left: 40px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size:32px;
+  color:#515253;
+  line-height: 0.9;
+}

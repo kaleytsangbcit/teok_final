@@ -25,6 +25,7 @@ const NatureButton = styled.button`
     background: ${[props=>props.bg || "#DAA"]};
     `
 
+    //retake
     const SmallButton4 = styled.button`
     background:#9ED292;
     text-align:center;
@@ -33,7 +34,7 @@ const NatureButton = styled.button`
     width: 160px;
     height: 38px;
     border-radius:50px;
-    color:#FFFFFF;
+    color:#515253;
     border-color:white;
     font-family: 'Montserrat', sans-serif;
     align-items: center;
@@ -45,13 +46,14 @@ const NatureButton = styled.button`
     top: 545px;
     left: 86px;
 `
+    //pick duration
     const SmallButton5 = styled.button`
     background:#69A5CA;
     text-align:center;
-    font-size:12px;
+    font-size:16px;
     padding-right:5px;
     width: 160px;
-    height: 38px;
+    height: 60px;
     border-radius:50px;
     color:#FFFFFF;
     border-color:white;
@@ -62,18 +64,18 @@ const NatureButton = styled.button`
     margin:25px;
     margin-top:30px;
     position: relative;
-    top: 545px;
+    top: 404px;
     left: 86px;
 `
 
 const SoundSec = styled.div`
     position: absolute;
-    top: 146px;
+    top: 346px;
     left: 33px;
 `
 const Bubble = styled.div`
     position: relative;
-    top:94px;
+    top:104px;
     left:64px;
     width:300px;
 `
@@ -96,9 +98,9 @@ export default function QResults() {
 
     return <div>
 
-        <div className={styles.leftarrow}>
+        {/* <div className={styles.leftarrow}>
             <LeftArrowForMusic></LeftArrowForMusic>
-        </div> 
+        </div>  */}
 
         <div className={styles.nav}>
         <NavBar></NavBar>
@@ -106,9 +108,9 @@ export default function QResults() {
 
         <Bubble>
             <img src="/bubble.png" alt="Dialogue bubble" />   
-            <text className={styles.bubbleText}>
+            <text className={styles.bubbleText}>These sounds might help!
             </text> 
-            {/* <img id={styles.logo} src="/logo.png" alt="Teok relaxing" />  */}
+            <img id={styles.teokLay} src="/teokcute.png" alt="Teok relaxing" /> 
         </Bubble>
 
         <SoundSec>
@@ -127,8 +129,11 @@ export default function QResults() {
             }
         </SoundSec>
 
-        <SmallButton4 onClick={
-        ()=>r.push("/tips")}>
+        <SmallButton4 onClick={()=>
+        {r.push("/tips");
+        var audio = document.getElementById('ai')
+        audio.pause()}
+        }>
             Retake Quiz
         </SmallButton4>    
         

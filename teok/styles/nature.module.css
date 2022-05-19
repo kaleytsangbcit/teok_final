@@ -31,6 +31,34 @@
   right: 40px;
 }
 
-.imgBtn {
-  
+
+.teokie {
+  position: absolute;
+  bottom:35px;
+  width: 180px;
+  left: 30px;;
+}
+
+.teokie2 {
+  position: absolute;
+  bottom:15px;
+  width: 145px;
+  left: 45px;
+}
+
+#teokLay {
+  width: 50%;
+  position: absolute;
+  left: 32px;
+}
+
+.bubbleText{
+  position:absolute;
+  width:260px;
+  top: 12px;
+  left: 40px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size:32px;
+  color:#515253;
+  line-height: 0.9;
 }

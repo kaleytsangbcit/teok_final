@@ -74,11 +74,13 @@ export default function Main(){
         <div className={styles.leftarrow}>
             <LeftArrowForMusic></LeftArrowForMusic>
         </div> 
-        <div className={styles.nav}>
-        <NavBar></NavBar>
-        </div>
+
+       <img className={styles.teokie2} src="/teokcute3.png" alt="home"/>
+       
+        
         <Nature>
             <text>Natural</text>
+            
         </Nature>
         <NatureButton
             bg={(sel === 0) ? "#FCBAC2" : "#ADCBDE"}

@@ -27,21 +27,21 @@ export const qs = [
     {
         title:"What colour do you currently feel like?",
         warm:[{
-            img:"/teok_icon2.png",
-            text:"red"
+            img:"/teokGreen.svg",
+            text:"green"
         },
         {
-            img:"/teok_icon2.png",
-            text:"yellow"
+            img:"/teokBlue.svg",
+            text:"blue"
         }],
         cold:[
             {
-                img:"/teok_icon2.png",
-                text:"green"
+                img:"/teokRed.SVG",
+                text:"red"
             },
             {
-                img:"/teok_icon2.png",
-                text:"blue"
+                img:"/teokYellow.svg",
+                text:"yellow"
             }
         ]
     }

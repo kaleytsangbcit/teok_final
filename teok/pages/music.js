@@ -73,9 +73,10 @@ export default function Main(){
         <div className={styles.leftarrow}>
             <LeftArrowForMusic></LeftArrowForMusic>
         </div> 
-        <div className={styles.nav}>
-        <NavBar></NavBar>
-        </div>
+
+
+        <img className={styles.teokie} src="/teokcute2.png" alt="home"/>
+
         <Nature>
             <text >Instrumental</text>
         </Nature>

@@ -66,12 +66,12 @@ export default class Timer extends Component {
             {nm}
           </text>
           <text className={styles.text}>
-            Let's follow the bubbles to do the breathing exercise
+          Breathe in when the circle expands, breathe out when it shrinks.
           </text>
 
           <div className={styles.timer}>
               { minutes === 0 && seconds === 0
-                ? <h1>How do you feel now?</h1> 
+                ? <h1>Good job! Try another one</h1> 
                   : <h1> {minutes} : {seconds < 10 ? `0${seconds}` : seconds}</h1>
               }
           </div>

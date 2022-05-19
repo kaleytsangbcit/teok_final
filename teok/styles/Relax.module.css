@@ -72,11 +72,15 @@
 }
 
 .timer {
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   top: 338px;
   text-align: center;
   margin:auto;
+}
+
+.timer h1{
+  font-size: 26px;
 }
 
 .startwithicon {

@@ -1,4 +1,4 @@
-import { qs, GetAnswers } from "../que_content";
+import { qs, GetAnswers } from "../../comps/data/que_content";
 
 import Options from "../../comps/questions/options";
 

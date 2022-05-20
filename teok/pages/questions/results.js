@@ -4,7 +4,6 @@ import {useState} from 'react';
 import styled from "styled-components"
 import styles from '../../styles/nature.module.css'
 import { NavBar } from "../../comps/navbar";
-import { NextButton2, LeftArrowForMusic, RetakeBtn } from "../../comps/buttons";
 import { useRouter } from 'next/router';
 
 

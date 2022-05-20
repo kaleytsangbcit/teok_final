@@ -10,9 +10,9 @@
   position:absolute;
   top:180px;
   left:30px;
-  font-family: 'Indie Flower', cursive;
-  font-size:30px;
-  color:#575757
+  font-family: 'Nanum Pen Script', cursive;
+  font-size:42px;
+  color:#515253;
 }
 
 .text {
@@ -72,11 +72,15 @@
 }
 
 .timer {
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   top: 338px;
   text-align: center;
   margin:auto;
+}
+
+.timer h1{
+  font-size: 26px;
 }
 
 .startwithicon {
@@ -87,7 +91,7 @@
 
 .logowithbreathing {
   position:absolute;
-  top:460px;
+  top:500px;
   left:120px;
 }
 
@@ -98,7 +102,7 @@
 .breathingcircle {
   color: transparent;
   position: absolute;
-  top: 520px;
+  top: 560px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70px;

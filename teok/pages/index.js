@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -26,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <img id={styles.bubble} src="/bubble.png" alt="Dialogue bubble" />   
         <text id={styles.bubbleText}>
-          Hi! I am Teok!
+          Hi !  I am Teok!
         </text>       
         <img id={styles.logowithtext} src="/logowithtext.png" alt="Teok Logo" />
 

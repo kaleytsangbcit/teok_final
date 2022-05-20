@@ -31,15 +31,16 @@ export default function Main(){
     <div className={styles.logo}>
       <img src="/logo.png" alt="Teok logo" />   
     </div>
-    <div className={styles.name}>
-        <input type="text" onChange={
+    <div >
+
+        <input className={styles.name} type="text" onChange={
         (e)=>ChangeButton(e.target.value)
       }/>
     </div>
     <div className={styles.StartBtn}>
       <NextButton></NextButton>
     </div>
-  
+
     </div>
   }
   

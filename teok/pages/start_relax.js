@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { NatureButton, MusicButton, GetTip} from '../comps/buttons';
 import { NavBar } from '../comps/navbar';
 import styled from 'styled-components';
-import { GetName } from './data/name_content';
+import { GetName } from './name_content';
 
 const Bubble = styled.div`
     margin: auto;

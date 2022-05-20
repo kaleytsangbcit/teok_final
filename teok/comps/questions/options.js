@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import { ChangeAnswers } from '../../pages/data/que_content';
+import { ChangeAnswers } from '../../pages/que_content';
 import { useState } from 'react';
 // import styles from '../styles/question.module.css'
 //push

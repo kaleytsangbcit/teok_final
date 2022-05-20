@@ -2,7 +2,7 @@ import { NextButton } from '../comps/buttons';
 import styles from '../styles/name.module.css'
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
-import { ChangeButton } from './name_content';
+import { ChangeButton } from '../comps/data/name_content';
 
 const Bubble = styled.div`
 position: relative;

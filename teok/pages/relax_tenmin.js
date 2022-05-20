@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import styles from '../styles/Relax.module.css'
 import { ChangeMusicButton, LeftArrow  } from '../comps/buttons';
 import { NavBar } from '../comps/navbar';
-import { GetName } from './name_content';
+import { GetName } from '../comps/data/name_content';
 import {useState, useEffect} from 'react';
 import React, { Component } from 'react'
 

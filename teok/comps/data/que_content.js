@@ -36,7 +36,7 @@ export const qs = [
         }],
         cold:[
             {
-                img:"/teokRed.SVG",
+                img:"/teokRed.svg",
                 text:"red"
             },
             {

@@ -79,6 +79,11 @@ const Bubble = styled.div`
     width:300px;
 `
 
+// fixes issue on this page
+export async function getServerSideProps() {
+    return { props: {} };
+}
+
 export default function QResults() {
     
     const [sel, setSel] = useState(-1);

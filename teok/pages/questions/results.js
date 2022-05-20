@@ -1,4 +1,4 @@
-import { GetAnswers,res } from "../que_content"
+import { GetAnswers,res } from "../../comps/data/que_content"
 // import { NatureButton } from "../../comps/buttons";
 import {useState} from 'react';
 import styled from "styled-components"
